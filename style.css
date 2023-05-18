@@ -3,6 +3,8 @@ body {
 }
 
 .container {
-    color: black;
+    background-color: black;
+    color: white;
+
 }
 
