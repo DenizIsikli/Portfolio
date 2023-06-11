@@ -19,22 +19,22 @@ body {
 
 #introT {
     color: white;
-    border: 1px solid white;
     width: fit-content;
-    margin-top: 4.0em;
-    margin-left: 42%;
+    margin-top: 5.5em;
+    margin-left: 45%;
 }
 
     #introT h1 {
         font-weight: 1000;
         font-size: 2.2rem;
-        line-height: 0.2;
+        line-height: 0.5;
         letter-spacing: -.025em;
     }
 
     #introT h5 {
         font-weight: 550;
-        line-height: 0.18em;
+        line-height: 1.0em;
+        margin-bottom: 5px;
     }
 
     #introT p {
@@ -46,33 +46,26 @@ body {
     }
 
 #navbar {
-    display:flex;
-    justify-content: center;
-    margin: 18em 5em 0% 0%;
+    margin-top: 17em;
+    width: 100%;
 }
 
-    ul {
+    #navbar ul {
         border: 1px solid yellow;
         text-align:center;
         list-style-type: none;
     }
 
-        li {
+        #navbar li {
             display:inline-block;
             border-radius: 2%;
-            width: 4.5em;
-            padding-right: 25px;
-            padding-left: -80px;
         }
 
-            a {
-                text-transform: uppercase;
-                text-decoration: none;
-                font-size: 0.65rem;
+            #navbar a {
                 color: lightgrey;
             }
 
-                a:hover { 
+                #navbar a:hover { 
                     color: white;
                     border-bottom: 1px solid white;
                 }
