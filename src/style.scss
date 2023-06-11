@@ -48,7 +48,7 @@ body {
 #navbar {
     display:flex;
     justify-content: center;
-    margin: 18em 0% 0% 0%;
+    margin: 18em 5em 0% 0%;
 }
 
     ul {
@@ -60,7 +60,9 @@ body {
         li {
             display:inline-block;
             border-radius: 2%;
-            width: 5em;
+            width: 4.5em;
+            padding-right: 25px;
+            padding-left: -80px;
         }
 
             a {
