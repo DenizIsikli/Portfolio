@@ -1,14 +1,27 @@
 /* Portfolio.css */
 
 .portfolio {
-    background-color: #222; /* Dark background color */
-    color: #fff; /* Text color */
+    background-color: #222;
+    color: #fff;
     padding: 20px;
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+    width: 100vw;
 }
 
-header {
-    text-align: center;
+.intro-section {
+    /* Left half of the screen */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border: 1px solid #fff;
+    padding: 20px;
 }
 
 header h1 {
@@ -22,8 +35,7 @@ header p {
 
 .socials {
     margin-top: 60px;
-    text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .socials a {
@@ -41,25 +53,39 @@ header p {
     display: inline-block;
 }
 
+.project-section {
+    /* Right half of the screen */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
 .projects {
     margin-top: 40px;
+    text-align: left;
+    width: auto;
 }
 
 .projects h2 {
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .projects ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .projects li {
     margin-bottom: 20px;
     border: 1px solid #fff;
     transition: opacity 0.3s;
-    display: inline-block;
-    margin: 0 20px;
+    width: 100%;
+    max-width: 400px;
     padding: 20px;
 }
 
@@ -87,11 +113,11 @@ header p {
     transform-origin: bottom left;
     transition: transform 0.3s ease;
 }
-  
+
 .projects a:hover::before {
     transform: scaleX(1);
 }
-  
+
 .projects p {
     font-size: 1.2rem;
 }
