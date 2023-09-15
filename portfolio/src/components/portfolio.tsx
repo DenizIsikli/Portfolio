@@ -12,15 +12,15 @@ const Portfolio: React.FC = () => {
       </header>
 
       <section className="projects">
-        <h2>Projects</h2>
+        <h2>GitHub Projects</h2>
         <ul>
           <li>
-            <a href="https://github.com/your-github/your-repo-1">Project 1</a>
-            <p>Description of Project 1.</p>
+            <a href="https://github.com/DenizIsikli/Portfolio">Portfolio</a>
+            <p>Portfolio website made with React and Typescript</p>
           </li>
           <li>
-            <a href="https://github.com/your-github/your-repo-2">Project 2</a>
-            <p>Description of Project 2.</p>
+            <a href="https://github.com/DenizIsikli/DcQueryBot">DcQueryBot</a>
+            <p>Discord bot developed for the purpose of making life easier</p>
           </li>
         </ul>
       </section>
@@ -37,7 +37,7 @@ const Portfolio: React.FC = () => {
           </a>
         </div>
         <div>
-          <a href="mailto:your-email@example.com" rel="noopener noreferrer" target="_blank">
+          <a href="mailto:denizisikli7@gmail.com" rel="noopener noreferrer" target="_blank">
             <FaEnvelope /> Email
           </a>
         </div>
