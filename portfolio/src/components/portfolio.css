@@ -1,0 +1,66 @@
+/* Portfolio.css */
+
+.portfolio {
+    background-color: #222; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+  }
+  
+  .socials {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: opacity 0.3s;
+  }
+  
+  .socials a:hover {
+    opacity: 0.8;
+  }
+  
+  .projects {
+    margin-top: 40px;
+  }
+  
+  .projects h2 {
+    font-size: 1.5rem;
+  }
+  
+  .projects ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .projects li {
+    margin-bottom: 20px;
+  }
+  
+  .projects a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: opacity 0.3s;
+  }
+  
+  .projects a:hover {
+    opacity: 0.8;
+  }
+  
