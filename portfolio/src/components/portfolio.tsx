@@ -1,12 +1,14 @@
 import React from 'react';
 import './portfolio.css';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Portfolio: React.FC = () => {
   return (
     <div className="portfolio">
       <header>
-        <h1>Your Name</h1>
+        <h1>Deniz Isikli</h1>
         <p>Software Engineering Student</p>
+        <p>Denmark's Technical University (DTU)</p>
       </header>
 
       <section className="projects">
@@ -24,20 +26,19 @@ const Portfolio: React.FC = () => {
       </section>
 
       <section className="socials">
-        <h2>Social Links</h2>
         <div>
-          <a href="https://github.com/your-github">
-            <img src="/path/to/github-logo.png" alt="GitHub" />
+          <a href="https://github.com/DenizIsikli" rel="noopener noreferrer" target="_blank">
+            <FaGithub /> GitHub
           </a>
         </div>
         <div>
-          <a href="https://www.linkedin.com/in/your-linkedin">
-            <img src="/path/to/linkedin-logo.png" alt="LinkedIn" />
+          <a href="https://www.linkedin.com/in/deniz-isikli/" rel="noopener noreferrer" target="_blank">
+            <FaLinkedin /> LinkedIn
           </a>
         </div>
         <div>
-          <a href="mailto:your-email@example.com">
-            <img src="/path/to/email-logo.png" alt="Email" />
+          <a href="mailto:your-email@example.com" rel="noopener noreferrer" target="_blank">
+            <FaEnvelope /> Email
           </a>
         </div>
       </section>
