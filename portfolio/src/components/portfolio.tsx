@@ -10,25 +10,25 @@ const Portfolio: React.FC = () => {
                 <h1>Deniz Isikli</h1>
                 <p>Software Engineering Student</p>
                 <p>Denmark's Technical University (DTU)</p>
+            
+                <section className="socials">
+                    <div>
+                        <a href="https://github.com/DenizIsikli" rel="noopener noreferrer" target="_blank">
+                        <FaGithub />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/deniz-isikli/" rel="noopener noreferrer" target="_blank">
+                        <FaLinkedin />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="mailto:denizisikli7@gmail.com" rel="noopener noreferrer" target="_blank">
+                        <FaEnvelope />
+                        </a>
+                    </div>
+                </section>
             </header>
-
-            <section className="socials">
-                <div>
-                    <a href="https://github.com/DenizIsikli" rel="noopener noreferrer" target="_blank">
-                    <FaGithub />
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.linkedin.com/in/deniz-isikli/" rel="noopener noreferrer" target="_blank">
-                    <FaLinkedin />
-                    </a>
-                </div>
-                <div>
-                    <a href="mailto:denizisikli7@gmail.com" rel="noopener noreferrer" target="_blank">
-                    <FaEnvelope />
-                    </a>
-                </div>
-            </section>
         </div>
         
         <div className='project-section'>

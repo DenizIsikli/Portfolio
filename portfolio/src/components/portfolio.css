@@ -1,5 +1,18 @@
 /* Portfolio.css */
 
+/* Reset margin and padding on HTML and body */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+/* Apply box-sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
 .portfolio {
     background-color: #222;
     color: #fff;
@@ -25,17 +38,17 @@
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin: 0;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .socials {
-    margin-top: 60px;
-    font-size: 1.3rem;
+    margin-top: 60%;
+    font-size: 1.6rem;
 }
 
 .socials a {
