@@ -8,9 +8,8 @@ const Portfolio: React.FC = () => {
         <div className="intro-section">
             <header>
                 <h1>Deniz Isikli</h1>
-                <p>Software Engineering Student</p>
-                <p>Denmark's Technical University (DTU)</p>
-            
+                <p>Software Engineering Student at<br></br>Denmark's Technical University (DTU)</p>
+
                 <section className="socials">
                     <div>
                         <a href="https://github.com/DenizIsikli" rel="noopener noreferrer" target="_blank">
@@ -33,7 +32,6 @@ const Portfolio: React.FC = () => {
         
         <div className='project-section'>
             <section className="projects">
-                <h2>GitHub Projects</h2>
                 <ul>
                     <li>
                         <a href="https://github.com/DenizIsikli/Portfolio">Portfolio</a>
@@ -43,13 +41,20 @@ const Portfolio: React.FC = () => {
                         <a href="https://github.com/DenizIsikli/DcQueryBot">DcQueryBot</a>
                         <p>Discord bot developed for the purpose of making life easier</p>
                     </li>
+                    <li>
+                        <a href="https://github.com/DenizIsikli/CDIO">CDIO</a>
+                        <p>University project using image recognition </p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/DenizIsikli/PriceRunnerAPI">PriceRunnerAPI</a>
+                        <p>API for PriceRunner made to be integrated into my Discord bot</p>
+                    </li>
                 </ul>
             </section>
         </div>
-
-        
     </div>
   );
 };
 
 export default Portfolio;
+  
