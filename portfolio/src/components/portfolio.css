@@ -68,7 +68,7 @@ header p {
 }
 
 .socials a:hover {
-    opacity: 0.8;
+    opacity: 0.4;
 }
 
 .socials div {
@@ -108,7 +108,6 @@ header p {
 }
 
 .projects li {
-    /* make the list items fit the widt of the list */
     width: 100%;
     height: 7em;
     text-align: left;
@@ -119,7 +118,7 @@ header p {
 }
 
 .projects li:hover {
-    opacity: 0.7;
+    opacity: 0.4;
 }
 
 .projects a {
