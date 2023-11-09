@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Portfolio from './components/portfolio';
+import Frontpage from './components/frontpage';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Portfolio />
+        <Frontpage />
       </header>
     </div>
   );
