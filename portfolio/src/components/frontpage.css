@@ -13,15 +13,15 @@ body {
     box-sizing: border-box;
 }
 
-.portfolio {
-    background-color: #222;
+.frontpage {
+    background-color: #000;
     color: #fff;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    font-family: "Lucida Console", "Courier New", monospace;
     display: flex;
-    justify-content: space-between;
-    height: 100vh;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -33,22 +33,24 @@ body {
     text-align: center;
 }
 
-header h1 {
-    font-size: 3rem;
+h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
     margin: 0;
 }
 
-header p {
-    font-size: 1.1rem;
-}
-
-.socials {
-    margin-top: 30%;
+p {
     font-size: 1.3rem;
 }
 
+.socials {
+    line-height: 3rem;
+    margin-top: 5%;
+    font-size: 1.1rem;
+}
+
 .socials a {
-    margin: 0 10px;
+    position: relative;
     text-decoration: none;
     color: #fff;
     transition: opacity 0.3s;
@@ -58,87 +60,19 @@ header p {
     opacity: 0.4;
 }
 
-
-
-
-
-
-
-
-
-
-
-.project-section {
-    /* Right half of the screen */
-    max-width: 100%;
-    width: 50%;
-    display: flex;
-    padding-top: 5%;
-    border: 1px solid #fff;
-}
-
-.projects {
-    height: fit-content;
-    max-width: 100%;
-    width: 100%;
-}
-
-.projects ul {
-    /* center the list */
-    margin-left: auto;
-    margin-right: auto;
-    /* the list still isn't centered on the right side of the page */
-    margin-left: 50%;
-    transform: translateX(-50%);
-
-    margin-top: 0;
-    padding: 0;
-    border: 1px solid blue;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    list-style-type: none;
-}
-
-.projects li {
-    width: 100%;
-    height: 7em;
-    text-align: left;
-    margin-bottom: 20px;
-    border: 1px solid #fff;
-    transition: opacity 0.3s;
-    padding: 20px;
-}
-
-.projects li:hover {
-    opacity: 0.4;
-}
-
-.projects a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.1rem;
-    position: relative;
-}
-
-.projects a::before {
+.socials a::before {
     content: "";
     position: absolute;
-    width: 100%; 
+    width: 0;
     height: 2px;
     bottom: 0;
-    left: 0; 
+    left: 50%;
     background-color: #fff;
-    transform: scaleX(0);
-    transform-origin: bottom left;
-    transition: transform 0.3s ease;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+    transition: width 0.3s ease;
 }
 
-.projects a:hover::before {
-    transform: scaleX(1);
-}
-
-.projects p {
-    font-size: 1.0rem;
+.socials a:hover::before {
+    width: 100%;
 }
