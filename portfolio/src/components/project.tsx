@@ -1,10 +1,10 @@
 import React from 'react';
-import './frontpage.css';
+import './project.css';
 
 const Project: React.FC = () => {
     return (
-    <div className='project-section'>
-            <section className="projects">
+    <div className='project'>
+            <section className="project-section">
                 <ul>
                     <li>
                         <a href="https://github.com/DenizIsikli/Portfolio">Portfolio</a>
