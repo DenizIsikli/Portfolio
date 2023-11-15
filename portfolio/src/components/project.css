@@ -3,7 +3,6 @@ html,
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Hide scrollbars */
 }
 
 /* Apply box-sizing to all elements */
@@ -18,16 +17,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    height: 100vh;
     width: 100vw;
 }
 
 .project-section {
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    display: flex;
     text-align: center;
     width: 30%;
 }
@@ -78,4 +73,20 @@ body {
 
 .project-section p {
     font-size: 1.0rem;
+}
+
+.project-section .tags {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-section .tag {
+    background-color: #333;
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
 }

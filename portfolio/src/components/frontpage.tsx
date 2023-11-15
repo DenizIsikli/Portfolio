@@ -9,11 +9,11 @@ const Frontpage: React.FC = () => {
         <div className="frontpage">
             <div className="frontpage-section">
                 <h1>Deniz Isikli</h1>
-                <p>Software Engineering student @ Denmark's Technical University</p>
+                <p>Software Engineering student at Denmark's Technical University</p>
                 
                 <section className="socials">
                     <div>
-                        <a href="./project.tsx" rel="noopener noreferrer" target="_blank">
+                        <a href="./project" rel="noopener noreferrer">
                             Projects<FaCode />
                         </a>
                     </div>
