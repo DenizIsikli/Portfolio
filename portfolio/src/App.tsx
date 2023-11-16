@@ -1,15 +1,23 @@
 import React from 'react';
 import './App.css';
-import Frontpage from './components/frontpage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
+import Frontpage from './components/frontpage/frontpage';
+import Project from './components/project/project';
+import CV from './components/cv/cv';
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Frontpage />   
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Frontpage />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/cv" element={<CV />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;

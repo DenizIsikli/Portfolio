@@ -61,6 +61,6 @@ const Project: React.FC = () => {
         </section>
     </div>
     );
-};
+}
 
 export default Project;

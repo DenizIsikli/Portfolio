@@ -1,8 +1,7 @@
 import React from 'react';
 import './frontpage.css';
-import { FaGithub, FaLinkedin, FaEnvelope, FaCode } from 'react-icons/fa';
-import Project from './project';
-
+import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaFilePdf } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Frontpage: React.FC = () => {
     return (
@@ -13,9 +12,7 @@ const Frontpage: React.FC = () => {
                 
                 <section className="socials">
                     <div>
-                        <a href="./project" rel="noopener noreferrer">
-                            Projects<FaCode />
-                        </a>
+                        <Link to="/project">Projects<FaCode /></Link>
                     </div>
                     <div>
                         <a href="https://github.com/DenizIsikli" rel="noopener noreferrer" target="_blank">
@@ -32,11 +29,14 @@ const Frontpage: React.FC = () => {
                             Gmail<FaEnvelope />
                         </a>
                     </div>
+                    <div>
+                        <Link to="/cv">CV<FaFilePdf /></Link>
+                    </div>
                 </section>
             </div>
         </div>
     );
-};
+}
 
 export default Frontpage;
   
