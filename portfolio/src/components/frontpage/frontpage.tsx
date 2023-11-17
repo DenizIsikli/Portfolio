@@ -30,7 +30,9 @@ const Frontpage: React.FC = () => {
                         </a>
                     </div>
                     <div>
-                        <Link to="/cv">CV<FaFilePdf /></Link>
+                        <a href="./CV.pdf" download="CV.pdf">
+                            CV<FaFilePdf />
+                        </a>
                     </div>
                 </section>
             </div>
