@@ -27,6 +27,7 @@ const Project: React.FC = () => {
                         <p>Developed a Discord bot aimed at simplifying various tasks and enhancing user experience within the platform</p>
                         <div className='tags'>
                             <span className='tag'>Python</span> 
+                            <span className='tag'>OOP</span>
                             <span className='tag'>Discord.py</span>
                             <span className='tag'>RESTful API</span>
                             <span className='tag'>Dockerfile</span>
@@ -67,6 +68,26 @@ const Project: React.FC = () => {
                         <div className='tags'>
                             <span className='tag'>C++</span>
                             <span className='tag'>Socket Programming</span>
+                        </div>
+                    </li>
+                </div>
+                <div className="project-group">
+                    <li>
+                        <a href="https://github.com/DenizIsikli/Mandatory-Assignment-2">Mandatory-Assignment-2</a>
+                        <p>Developed Memory Management in C</p>
+                        <div className='tags'>
+                            <span className='tag'>C</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://github.com/DenizIsikli/Spyware">Spyware</a>
+                        <p>Developed Spyware in Python</p>
+                        <div className='tags'>
+                            <span className='tag'>Python</span>
+                            <span className='tag'>OOP</span>
+                            <span className='tag'>Threads</span>
+                            <span className='tag'>Cryptography</span>
+                            <span className='tag'>smtplib</span>
                         </div>
                     </li>
                 </div>
