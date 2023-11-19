@@ -51,6 +51,7 @@ const Project: React.FC = () => {
                             <span className='tag'>Python</span>
                             <span className='tag'>RESTful API</span>
                             <span className='tag'>BeautifulSoup</span>
+                            <span className='tag'>PostgreSQL</span>
                         </div>
                     </li>
                 </div>

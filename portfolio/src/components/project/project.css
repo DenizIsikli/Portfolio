@@ -14,7 +14,7 @@ body {
 .back-arrow {
     position: fixed;
     top: 50%;
-    left: 75px;
+    left: 100px;
     transform: translateY(-50%);
     color: #fff;
     font-size: 24px;
