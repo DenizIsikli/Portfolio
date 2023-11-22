@@ -14,7 +14,7 @@ body {
 .back-arrow {
     position: fixed;
     top: 50%;
-    left: 100px;
+    left: 180px;
     transform: translateY(-50%);
     color: #fff;
     font-size: 24px;
@@ -22,6 +22,9 @@ body {
     cursor: pointer;
 }
 
+.back-arrow:hover {
+    opacity: 0.4;
+}
 
 .project {
     background-color: #000;
@@ -31,15 +34,11 @@ body {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .project-section {
-    margin: 0;
-    padding: 0;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    margin: 0 auto;
     width: 60%;
 }
 
@@ -57,9 +56,9 @@ body {
 }
 
 .project-section ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    list-style-type: none;
 }
 
 .project-section li {
@@ -119,4 +118,53 @@ body {
     margin-right: 8px;
     margin-bottom: 8px;
     border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+    .project-section {
+        width: 70%; /* Adjust width for medium-sized screens */
+    }
+
+    .back-arrow {
+        display: none; /* Hide back arrow on smaller screens */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .project-section {
+        width: 80%; /* Adjust width for smaller desktops and larger tablets */
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .project-section {
+        width: 90%; /* Adjust width for tablets and large mobile devices */
+    }
+
+    .project-section li {
+        height: auto; /* Adjust the height as needed */
+        margin-bottom: 20px; /* Reduce margin bottom */
+    }
+    
+    .project-group {
+        flex-direction: column; /* Stack items vertically */
+    }
+    
+    .project-group li {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin between items */
+    }
+}
+
+/* Styles for even smaller screens (e.g., smartphones) */
+@media screen and (max-width: 576px) {
+    .project-section {
+        width: 95%; /* Adjust width for smaller mobile devices */
+    }
+    
+    .project-section li {
+        height: auto; /* Adjust the height as needed */
+        margin-bottom: 15px; /* Reduce margin bottom */
+    }
 }

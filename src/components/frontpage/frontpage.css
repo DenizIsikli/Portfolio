@@ -73,3 +73,60 @@ p {
 .socials a:hover::before {
     width: 100%;
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+    .frontpage-section {
+        padding: 0 15px; /* Adjusted padding for medium-sized screens */
+    }
+
+    h1 {
+        font-size: 3rem; /* Decrease font size for the heading */
+    }
+
+    p {
+        font-size: 1.2rem; /* Decrease font size for the paragraph */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 2.5rem; /* Decrease font size for smaller desktops and larger tablets */
+    }
+
+    p {
+        font-size: 1rem; /* Decrease font size for smaller desktops and larger tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Adjust font size for tablets and large mobile devices */
+    }
+
+    p {
+        font-size: 0.9rem; /* Adjust font size for tablets and large mobile devices */
+    }
+
+    .socials {
+        line-height: 2.5rem; /* Adjust line height for social links */
+        margin-top: 3%; /* Reduce top margin for social links */
+        font-size: 1rem; /* Decrease font size for social links */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 1.8rem; /* Adjust font size for smaller mobile devices */
+    }
+
+    p {
+        font-size: 0.8rem; /* Adjust font size for smaller mobile devices */
+    }
+
+    .socials {
+        line-height: 2rem; /* Adjust line height for smaller mobile devices */
+        margin-top: 2%; /* Reduce top margin for smaller mobile devices */
+        font-size: 0.9rem; /* Decrease font size for smaller mobile devices */
+    }
+}
