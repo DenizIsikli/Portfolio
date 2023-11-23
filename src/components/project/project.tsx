@@ -51,7 +51,7 @@ const Project: React.FC = () => {
                             <span className='tag'>Python</span>
                             <span className='tag'>RESTful API</span>
                             <span className='tag'>BeautifulSoup</span>
-                            <span className='tag'>PostgreSQL</span>
+                            <span className='tag'>SQLite</span>
                         </div>
                     </li>
                 </div>
@@ -92,7 +92,25 @@ const Project: React.FC = () => {
                         </div>
                     </li>
                 </div>
-                
+                <div className="project-group">
+                    <li>
+                        <a href="https://github.com/DenizIsikli/InstantGamingAPI">InstantGamingAPI</a>
+                        <p>A RESTful API enabling streamlined product searches on Instant Gaming, providing structured product information retrieval.</p>
+                        <div className='tags'>
+                            <span className='tag'>Python</span>
+                            <span className='tag'>RESTful API</span>
+                            <span className='tag'>BeautifulSoup</span>
+                            <span className='tag'>SQLite</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://github.com/DenizIsikli/WowChatBot">WowChatBot</a>
+                        <p>Developed a World Of Warcraft extension aimed at simplifying various tasks and enhancing user experience within the game</p>
+                        <div className='tags'>
+                            <span className='tag'>Lua</span>
+                        </div>
+                    </li>
+                </div>
             </ul>
         </section>
     </div>
