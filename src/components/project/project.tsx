@@ -111,6 +111,22 @@ const Project: React.FC = () => {
                         </div>
                     </li>
                 </div>
+                <div className="project-group">
+                    <li>
+                        <a href="https://github.com/DenizIsikli/AlgorithmAndDataStructures">AlgorithmAndDataStructures</a>
+                        <p>Implementation of algorithms and data structures in Java</p>
+                        <div className='tags'>
+                            <span className='tag'>Java</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://github.com/DenizIsikli/02393-Programming-in-CPP">02393-Programming-in-CPP</a>
+                        <p>C++ exercises</p>
+                        <div className='tags'>
+                            <span className='tag'>C++</span>
+                        </div>
+                    </li>
+                </div>
             </ul>
         </section>
     </div>
