@@ -46,7 +46,7 @@ const Project: React.FC = () => {
                     </li>
                     <li>
                         <a href="https://github.com/DenizIsikli/PriceRunnerAPI">PriceRunnerAPI</a>
-                        <p>A RESTful API enabling streamlined product searches on Denmark's PriceRunner platform, providing structured product information retrieval.</p>
+                        <p>A RESTful API enabling streamlined product searches on Denmark's version of PriceRunner, providing structured product information retrieval.</p>
                         <div className='tags'>
                             <span className='tag'>Python</span>
                             <span className='tag'>RESTful API</span>
@@ -94,8 +94,8 @@ const Project: React.FC = () => {
                 </div>
                 <div className="project-group">
                     <li>
-                        <a href="https://github.com/DenizIsikli/InstantGamingAPI">InstantGamingAPI</a>
-                        <p>A RESTful API enabling streamlined product searches on Instant Gaming, providing structured product information retrieval.</p>
+                        <a href="https://github.com/DenizIsikli/QuittAPI">QuittAPI</a>
+                        <p>A RESTful API enabling streamlined media searches on Quitt.net, providing structured media information retrieval.</p>
                         <div className='tags'>
                             <span className='tag'>Python</span>
                             <span className='tag'>RESTful API</span>
