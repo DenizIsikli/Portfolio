@@ -1,9 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useSpring, animated } from 'react-spring';
 import './project.css';
 import { FaArrowLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Project: React.FC = () => {
+    const [showStars, setShowStars] = useState(false);
+
+    const starStyles = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        width: '2px',
+        height: '2px',
+        backgroundColor: '#fff',
+      };
+
+      const starAnimation = useSpring({
+        opacity: showStars ? 1 : 0,
+        from: { opacity: 0 },
+        config: { duration: 1000 },
+      });
+
+    const showStarsHandler = () => {
+        setShowStars(true);
+    }
+
     return (
     <div className='project'>
         <span>
@@ -14,13 +36,24 @@ const Project: React.FC = () => {
         <section className="project-section">
             <ul>
                 <div className="project-group">
-                    <li>
+                    <li onMouseEnter={showStarsHandler} onMouseLeave={() => setShowStars(false)} style={{
+                        position: 'relative',
+                        overflow: 'hidden',}}
+                    >
                         <a href="https://github.com/DenizIsikli/Portfolio">Portfolio</a>
                         <p>A personal website crafted using React and Typescript</p>
                         <div className='tags'>
                             <span className='tag'>React</span>
                             <span className='tag'>Typescript</span>
                         </div>
+                        {showStars && (
+                            <animated.div
+                            style={{
+                                ...starAnimation,
+                                ...starStyles
+                             }}
+                            />
+                        )}
                     </li>
                     <li>
                         <a href="https://github.com/DenizIsikli/DcQueryBot">DcQueryBot</a>
