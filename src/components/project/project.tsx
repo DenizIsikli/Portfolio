@@ -8,7 +8,7 @@ const Project: React.FC = () => {
     <div className='project'>
         <span>
             <Link to="/" className="home-button">
-                <FaArrowLeft className="back-arrow" />
+                <FaArrowLeft className="back-arrow"/>
             </Link>
         </span>
         <section className="project-section">

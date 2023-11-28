@@ -8,12 +8,12 @@ import Project from './components/project/project';
 function App() {
   return (
     <div className="App">
-        <BrowserRouter>
-          <Routes>
-              <Route path="/" element={<Frontpage />} />
-              <Route path="/project" element={<Project />} />
-          </Routes>
-        </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Frontpage />} />
+          <Route path="/project" element={<Project />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
