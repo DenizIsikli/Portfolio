@@ -7,13 +7,13 @@ const Project: React.FC = () => {
     const [stars, setStars] = useState<JSX.Element[]>([]);
 
     const createStars = () => {
-        const starCount = 30;
+        const starCount = 50;
         const starsList: JSX.Element[] = [];
 
         for (let i = 0; i < starCount; i++) {
             starsList.push(
                 <div
-                    className='star' // Add or ensure that this class is styled properly in project.css
+                    className='star'
                     key={i}
                     style={{
                         top: `${Math.random() * 100}%`,

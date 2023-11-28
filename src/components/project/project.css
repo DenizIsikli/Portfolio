@@ -80,7 +80,7 @@ body {
     width: 2px;
     height: 2px;
     background-color: #fff;
-    animation: sparkle 1s infinite linear;
+    animation: sparkle 1.5s infinite linear;
     display: none;
 }
 
