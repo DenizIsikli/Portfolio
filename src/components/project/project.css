@@ -50,33 +50,8 @@ body {
 
 .project-group li {
     position: relative;
+    z-index: 1;
     margin-right: 5%;
-}
-
-.project-group li:hover::before,
-.project-group li:hover::after {
-  content: '';
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background-color: #fff; /* Star color */
-  opacity: 0;
-  animation: sparkle 1s infinite linear; /* Apply sparkle animation */
-}
-
-@keyframes sparkle {
-  0% {
-    opacity: 0; /* Stars are initially invisible */
-    transform: translateY(-50%); /* Start above the li element */
-  }
-  50% {
-    opacity: 1; /* Stars start appearing */
-    transform: translateY(50%); /* Move down */
-  }
-  100% {
-    opacity: 0; /* Stars fade out */
-    transform: translateY(150%); /* Disappear below the li element */
-}
 }
 
 .project-section ul {
@@ -93,6 +68,30 @@ body {
     border: 1px solid #fff;
     transition: opacity 0.3s;
     padding: 20px;
+}
+
+.project-section li .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    animation: sparkle 1s infinite linear;
+}
+
+/* Sparkle animation */
+@keyframes sparkle {
+    0% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(150%);
+    }
 }
 
 .project-section a {
