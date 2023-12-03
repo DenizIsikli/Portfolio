@@ -71,10 +71,6 @@ body {
     padding: 20px;
 }
 
-.project-section li:hover .star {
-    display: block;
-}
-
 .project-section li .star {
     position: absolute;
     width: 2px;
@@ -82,6 +78,10 @@ body {
     background-color: #fff;
     animation: sparkle 1.5s infinite linear;
     display: none;
+}
+
+.project-section li:hover .star {
+    display: block;
 }
 
 @keyframes sparkle {

@@ -30,13 +30,13 @@ body {
     text-align: center;
 }
 
-h1 {
+.frontpage-section h1 {
     font-size: 3.5rem;
     font-weight: 400;
     margin: 0;
 }
 
-p {
+.frontpage-section p {
     font-size: 1.3rem;
     border-bottom: 1px solid #fff;
 }
