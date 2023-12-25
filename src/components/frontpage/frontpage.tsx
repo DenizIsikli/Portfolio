@@ -29,11 +29,6 @@ const Frontpage: React.FC = () => {
                             Gmail<FaEnvelope />
                         </a>
                     </div>
-                    <div>
-                        <a href="./CV.pdf" download="CV.pdf">
-                            CV<FaFilePdf />
-                        </a>
-                    </div>
                 </section>
             </div>
         </div>

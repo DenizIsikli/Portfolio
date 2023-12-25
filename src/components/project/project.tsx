@@ -7,7 +7,7 @@ const Project: React.FC = () => {
     const [stars, setStars] = useState<JSX.Element[]>([]);
 
     const createStars = () => {
-        const starCount = 50;
+        const starCount = 300;
         const starsList: JSX.Element[] = [];
 
         for (let i = 0; i < starCount; i++) {

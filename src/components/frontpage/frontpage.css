@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 /* Reset margin and padding on HTML and body */
 html,
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Hide scrollbars */
+    overflow: hidden;
 }
 
 /* Apply box-sizing to all elements */
@@ -12,9 +14,13 @@ body {
 }
 
 .frontpage {
-    background-color: #000;
+    background-color: #121212; /* Solid dark color */
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4jZXTvyvFURQG8N9731poYSE2gha+gop/gMVfQVAQbW0UfAGRUJCWllYo9KKFpYWEBn+DgoL/Aj+Di1CwtrYUbdJN0n5w5s17ZvLmzczuueeec+65Jb4X8hz/EeJ3iOg7EX8johvN9B9ERGtE9JmI6M9E9B0RvYnIHxFxN4noHxFxWUTUHyJiN0T0HyLiGxFxJUT0VyL6GxGdE9GviOhPRHQ3iOhvRDROREQ3iOhfRDQ3It4X8e8S8T2I6B9E9DcielhE9DciuhPRfouIHxFxN4noHxFxLUT0d0R0dyI6F9H9HxFxN4noH0T0b0T0d0R0JyJ6WET0d0T0b0T0W0T0b0T0b0R0N4noH0T0W0R0T0T0XUT0byI6p/rF08WfGtZL7AAAAAElFTkSuQmCC');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 100px 100px;
     color: #fff;
-    font-family: "Lucida Console", "Courier New", monospace;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,108 +32,81 @@ body {
 .frontpage-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 13%;
 }
 
 .frontpage-section h1 {
-    font-size: 3.5rem;
-    font-weight: 400;
-    margin: 0;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #e0e0e0;
 }
 
 .frontpage-section p {
-    font-size: 1.3rem;
-    border-bottom: 1px solid #fff;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
 }
 
+/* Social links styling */
 .socials {
-    line-height: 3rem;
-    margin-top: 5%;
-    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 .socials a {
-    position: relative;
     text-decoration: none;
     color: #fff;
-    transition: opacity 0.3s;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .socials a:hover {
-    opacity: 0.4;
-}
-
-.socials a::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    background-color: #fff;
-    transform: translateX(-50%);
-    transform-origin: bottom;
-    transition: width 0.3s ease;
-}
-
-.socials a:hover::before {
-    width: 100%;
+    transform: scale(1.1);
+    opacity: 0.6;
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 1200px) {
-    .frontpage-section {
-        padding: 0 15px; /* Adjusted padding for medium-sized screens */
+    .frontpage-section h1 {
+        font-size: 3.5rem;
     }
 
-    h1 {
-        font-size: 3rem; /* Decrease font size for the heading */
-    }
-
-    p {
-        font-size: 1.2rem; /* Decrease font size for the paragraph */
+    .frontpage-section p {
+        font-size: 1.4rem;
     }
 }
 
 @media screen and (max-width: 992px) {
-    h1 {
-        font-size: 2.5rem; /* Decrease font size for smaller desktops and larger tablets */
+    .frontpage-section h1 {
+        font-size: 3rem;
     }
 
-    p {
-        font-size: 1rem; /* Decrease font size for smaller desktops and larger tablets */
+    .frontpage-section p {
+        font-size: 1.3rem;
     }
 }
 
 @media screen and (max-width: 768px) {
-    h1 {
-        font-size: 2rem; /* Adjust font size for tablets and large mobile devices */
+    .frontpage-section h1 {
+        font-size: 2.5rem;
     }
 
-    p {
-        font-size: 0.9rem; /* Adjust font size for tablets and large mobile devices */
-    }
-
-    .socials {
-        line-height: 2.5rem; /* Adjust line height for social links */
-        margin-top: 3%; /* Reduce top margin for social links */
-        font-size: 1rem; /* Decrease font size for social links */
+    .frontpage-section p {
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width: 576px) {
-    h1 {
-        font-size: 1.8rem; /* Adjust font size for smaller mobile devices */
+    .frontpage-section h1 {
+        font-size: 2rem;
     }
 
-    p {
-        font-size: 0.8rem; /* Adjust font size for smaller mobile devices */
-    }
-
-    .socials {
-        line-height: 2rem; /* Adjust line height for smaller mobile devices */
-        margin-top: 2%; /* Reduce top margin for smaller mobile devices */
-        font-size: 0.9rem; /* Decrease font size for smaller mobile devices */
+    .frontpage-section p {
+        font-size: 1rem;
     }
 }
