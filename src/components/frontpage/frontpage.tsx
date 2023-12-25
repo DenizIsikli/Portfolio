@@ -1,6 +1,6 @@
 import React from 'react';
 import './frontpage.css';
-import { FaGithub, FaLinkedin, FaEnvelope, FaCode, FaFilePdf } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaCode } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Frontpage: React.FC = () => {
