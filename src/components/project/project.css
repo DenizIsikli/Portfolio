@@ -65,7 +65,7 @@ body {
 
 .project-group li:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 6px 56px rgba(62, 17, 224, 0.8);
 }
 
 .project-section li .star {
@@ -150,7 +150,7 @@ body {
 
 .project-section .tag {
     display: inline-block;
-    background-color: #333;
+    background-color: #555;
     color: #fff;
     font-size: 0.8rem;
     padding: 6px 12px;
@@ -158,10 +158,6 @@ body {
     margin-bottom: 8px;
     border-radius: 16px;
     transition: background-color 0.3s ease;
-}
-
-.project-section .tag:hover {
-    background-color: #555;
 }
 
 /* Responsive adjustments */
