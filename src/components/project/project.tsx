@@ -50,6 +50,8 @@ const Project: React.FC = () => {
                         <div className='tags'>
                             <span className='tag'>React</span>
                             <span className='tag'>Typescript</span>
+                            <span className='tag'>HTML</span>
+                            <span className='tag'>CSS</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
@@ -75,11 +77,10 @@ const Project: React.FC = () => {
                         onMouseLeave={removeStars}
                     >
                         <a href="https://github.com/DenizIsikli/CDIO">CDIO</a>
-                        <p>Collaborative university project utilizing image recognition technology to achieve specific objectives</p>
+                        <p>Collaborative university project in 62410 - CDIO-Project, utilizing image recognition technology to achieve specific objectives</p>
                         <div className='tags'>
                             <span className='tag'>Python</span>
                             <span className='tag'>OpenCV</span>
-                            <span className='tag'>Lego Mindstorm</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
@@ -103,8 +104,39 @@ const Project: React.FC = () => {
                         onMouseEnter={createStars} 
                         onMouseLeave={removeStars}
                     >
-                        <a href="https://github.com/DenizIsikli/ConwaysGameOfLife">ConwaysGameOfLife</a>
-                        <p>Implementation of Conway's Game of Life using Python</p>
+                        <a href="https://github.com/DenizIsikli/UselessBotWebsite">UselessBotWebsite</a>
+                        <p>Website created for my discord bot, showcasing the bot's features</p>
+                        <div className='tags'>             
+                            <span className='tag'>React</span>
+                            <span className='tag'>Typescript</span>
+                            <span className='tag'>HTML</span>
+                            <span className='tag'>CSS</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                    <li 
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/Spyware">Spyware</a>
+                        <p>Developed Spyware in Python</p>
+                        <div className='tags'>
+                            <span className='tag'>Python</span>
+                            <span className='tag'>OOP</span>
+                            <span className='tag'>Multi Processing</span>
+                            <span className='tag'>Cryptography</span>
+                            <span className='tag'>smtplib</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                </div>
+                <div className="project-group">
+                    <li
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/LeetCode-Python">LeetCode-Python</a>
+                        <p>LeetCode exercises in Python</p>
                         <div className='tags'>
                             <span className='tag'>Python</span>
                         </div>
@@ -119,34 +151,6 @@ const Project: React.FC = () => {
                         <div className='tags'>
                             <span className='tag'>C++</span>
                             <span className='tag'>Socket Programming</span>
-                        </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
-                    </li>
-                </div>
-                <div className="project-group">
-                    <li 
-                        onMouseEnter={createStars} 
-                        onMouseLeave={removeStars}
-                    >
-                        <a href="https://github.com/DenizIsikli/Mandatory-Assignment-2">Mandatory-Assignment-2</a>
-                        <p>Developed Memory Management in C</p>
-                        <div className='tags'>
-                            <span className='tag'>C</span>
-                        </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
-                    </li>
-                    <li 
-                        onMouseEnter={createStars} 
-                        onMouseLeave={removeStars}
-                    >
-                        <a href="https://github.com/DenizIsikli/Spyware">Spyware</a>
-                        <p>Developed Spyware in Python</p>
-                        <div className='tags'>
-                            <span className='tag'>Python</span>
-                            <span className='tag'>OOP</span>
-                            <span className='tag'>Threads</span>
-                            <span className='tag'>Cryptography</span>
-                            <span className='tag'>smtplib</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
@@ -184,7 +188,7 @@ const Project: React.FC = () => {
                         onMouseLeave={removeStars}
                     >
                         <a href="https://github.com/DenizIsikli/AlgorithmAndDataStructures">AlgorithmAndDataStructures</a>
-                        <p>Implementation of algorithms and data structures in Java</p>
+                        <p>Implementation of algorithms and data structures in Java for 02326 - Algorithms and Data Structures</p>
                         <div className='tags'>
                             <span className='tag'>Java</span>
                         </div>
@@ -198,6 +202,30 @@ const Project: React.FC = () => {
                         <p>C++ exercises</p>
                         <div className='tags'>
                             <span className='tag'>C++</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                </div>
+                <div className="project-group">
+                    <li 
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/Mandatory-Assignment-2">Mandatory-Assignment-2</a>
+                        <p>Developed Memory Management in C for 62588 - Operating Systems</p>
+                        <div className='tags'>
+                            <span className='tag'>C</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                    <li 
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/ConwaysGameOfLife">ConwaysGameOfLife</a>
+                        <p>Implementation of Conway's Game of Life using Python</p>
+                        <div className='tags'>
+                            <span className='tag'>Python</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
