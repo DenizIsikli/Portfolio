@@ -14,40 +14,48 @@ body {
 }
 
 .frontpage {
-    background-color: #121212; /* Solid dark color */
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4jZXTvyvFURQG8N9731poYSE2gha+gop/gMVfQVAQbW0UfAGRUJCWllYo9KKFpYWEBn+DgoL/Aj+Di1CwtrYUbdJN0n5w5s17ZvLmzczuueeec+65Jb4X8hz/EeJ3iOg7EX8johvN9B9ERGtE9JmI6M9E9B0RvYnIHxFxN4noHxFxWUTUHyJiN0T0HyLiGxFxJUT0VyL6GxGdE9GviOhPRHQ3iOhvRDROREQ3iOhfRDQ3It4X8e8S8T2I6B9E9DcielhE9DciuhPRfouIHxFxN4noHxFxLUT0d0R0dyI6F9H9HxFxN4noH0T0b0T0d0R0JyJ6WET0d0T0b0T0W0T0b0T0b0R0N4noH0T0W0R0T0T0XUT0byI6p/rF08WfGtZL7AAAAAElFTkSuQmCC');
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: 100px 100px;
+    background-color: #121212;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
 }
 
 .frontpage-section {
     display: flex;
-    flex-direction: column;
+    text-align: left;
     align-items: center;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    margin-top: 13%;
+    justify-content: flex-start;
+    max-width: 700px;
+    width: 100%;
+}
+
+.text-content {
+    margin-bottom: 8%;
+    padding-right: 20px;
+}
+
+.picture {
+    margin-left: 5px;
+}
+
+.profile-picture {
+    width: 175px;
+    height: auto;
+    border-radius: 3%;
 }
 
 .frontpage-section h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 700;
     margin-bottom: 20px;
     color: #e0e0e0;
 }
 
 .frontpage-section p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 30px;
     opacity: 0.9;
 }
@@ -55,7 +63,6 @@ body {
 /* Social links styling */
 .socials {
     display: flex;
-    justify-content: center;
     gap: 15px;
 }
 
@@ -79,6 +86,10 @@ body {
     .frontpage-section p {
         font-size: 1.4rem;
     }
+
+    .profile-picture {
+        width: 150px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -88,6 +99,10 @@ body {
 
     .frontpage-section p {
         font-size: 1.3rem;
+    }
+
+    .profile-picture {
+        display: none;
     }
 }
 
