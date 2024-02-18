@@ -65,7 +65,7 @@ body {
 
 .project-group li:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 6px 56px rgba(62, 17, 224, 0.8);
+    box-shadow: 0px 6px 35px rgba(62, 17, 224, 0.8);
 }
 
 .project-section li .star {
