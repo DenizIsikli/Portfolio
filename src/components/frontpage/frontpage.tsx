@@ -22,6 +22,9 @@ const Frontpage: React.FC = () => {
                             </a>
                         </div>
                         <div>
+                            <Link to="/githubactivity">GitHub Activity<FaGithub /></Link>
+                        </div>
+                        <div>
                             <a href="https://www.linkedin.com/in/deniz-isikli/" rel="noopener noreferrer" target="_blank">
                                 LinkedIn<FaLinkedin />
                             </a>
