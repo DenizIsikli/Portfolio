@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Reset margin and padding on HTML and body */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Apply box-sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+.back-arrow {
+    position: fixed;
+    top: 50%;
+    left: 8.5%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 24px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.back-arrow:hover {
+    opacity: 0.6;
+}
+
+.githubactivity {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.githubactivity h2 {
+    font-size: 2.3rem;
+    font-weight: 550;
+    color: #e0e0e0;
+    margin-bottom: 2rem;
+}
+
+.commits {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.commit {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.commit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 35px rgba(62, 17, 224, 0.8);
+}
+
+.commit h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #58a6ff;
+}
+
+.commit p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: #c9d1d9;
+}
+
+.commit p:last-of-type {
+    text-align: right;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.commit a {
+    position: relative;
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.commit a:hover {
+    opacity: 0.4;
+}
+
+.commit a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #fff;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+    transition: width 0.3s ease;
+}
+
+.commit a:hover::before {
+    width: 100%;
+}
