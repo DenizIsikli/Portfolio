@@ -115,3 +115,20 @@ html, body {
 .commit a:hover::before {
     width: 100%;
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 1600px) {
+    .commits {
+        max-width: 1000px;
+    }
+
+    .back-arrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .commits {
+        max-width: 800px;
+    }
+}
