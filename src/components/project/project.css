@@ -50,17 +50,17 @@ body {
 .project-group li {
     width: 100%;
     position: relative;
-    background-color: #1c1c1c;
+    background: #1e1e1e;
     list-style: none;
     position: relative;
     z-index: 1;
     margin: 10px;
     flex-basis: calc(33.333% - 20px);
     border: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 20px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .project-group li:hover {
@@ -99,7 +99,7 @@ body {
 
 .project-section a {
     text-decoration: none;
-    color: #fff;
+    color: #58a6ff;
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 8px;
