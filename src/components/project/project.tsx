@@ -170,14 +170,17 @@ const Project: React.FC = () => {
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
-                    <li 
+                    <li
                         onMouseEnter={createStars} 
                         onMouseLeave={removeStars}
                     >
-                        <a href="https://github.com/DenizIsikli/WowChatBot">WowChatBot</a>
-                        <p>Developed a World Of Warcraft extension aimed at simplifying various tasks and enhancing user experience within the game</p>
+                        <a href="https://github.com/DenizIsikli/ProshopAPI">ProshopAPI</a>
+                        <p>A RESTful API enabling streamlined product searches on Proshop, providing structured product information retrieval.</p>
                         <div className='tags'>
-                            <span className='tag'>Lua</span>
+                            <span className='tag'>Python</span>
+                            <span className='tag'>RESTful API</span>
+                            <span className='tag'>Scrapy</span>
+                            <span className='tag'>SQLite</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
@@ -207,6 +210,36 @@ const Project: React.FC = () => {
                     </li>
                 </div>
                 <div className="project-group">
+                    <li
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/62444-DataVisualization-Analysis">62444-DataVisualization-Analysis</a>
+                        <p>University project in 62444 - Data Visualization and Analysis</p>
+                        <div className='tags'>
+                            <span className='tag'>Python</span>
+                            <span className='tag'>Data Visualization & Analysis</span>
+                            <span className='tag'>Jupyter</span>
+                            <span className='tag'>Pandas</span>
+                            <span className='tag'>Matplotlib</span>
+                            <span className='tag'>Seaborn</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                    <li 
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/ConwaysGameOfLife">ConwaysGameOfLife</a>
+                        <p>Implementation of Conway's Game of Life using Python</p>
+                        <div className='tags'>
+                            <span className='tag'>Python</span>
+                            <span className='tag'>Pygame</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                </div>
+                <div className="project-group">
                     <li 
                         onMouseEnter={createStars} 
                         onMouseLeave={removeStars}
@@ -222,10 +255,10 @@ const Project: React.FC = () => {
                         onMouseEnter={createStars} 
                         onMouseLeave={removeStars}
                     >
-                        <a href="https://github.com/DenizIsikli/ConwaysGameOfLife">ConwaysGameOfLife</a>
-                        <p>Implementation of Conway's Game of Life using Python</p>
+                        <a href="https://github.com/DenizIsikli/WowChatBot">WowChatBot</a>
+                        <p>Developed a World Of Warcraft extension aimed at simplifying various tasks</p>
                         <div className='tags'>
-                            <span className='tag'>Python</span>
+                            <span className='tag'>Lua</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
