@@ -240,6 +240,32 @@ const Project: React.FC = () => {
                     </li>
                 </div>
                 <div className="project-group">
+                    <li
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/Neovim-Config">Neovim-Config</a>
+                        <p>Personal Neovim configuration</p>
+                        <div className='tags'>
+                            <span className='tag'>Neovim</span>
+                            <span className='tag'>Lua Scripting</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                    <li
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/VsCodeConfig/tree/main/Images">VsCodeConfig</a>
+                        <p>Personal VsCode configuration</p>
+                        <div className='tags'>
+                            <span className='tag'>VsCode</span>
+                            <span className='tag'>JSON</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                </div>
+                <div className="project-group">
                     <li 
                         onMouseEnter={createStars} 
                         onMouseLeave={removeStars}
