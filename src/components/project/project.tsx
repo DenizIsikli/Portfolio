@@ -88,13 +88,10 @@ const Project: React.FC = () => {
                         onMouseEnter={createStars} 
                         onMouseLeave={removeStars}
                     >
-                        <a href="https://github.com/DenizIsikli/PriceRunnerAPI">PriceRunnerAPI</a>
-                        <p>A RESTful API enabling streamlined product searches on Denmark's version of PriceRunner, providing structured product information retrieval.</p>
+                        <a href="https://github.com/DenizIsikli/AdventOfCode-AoC-">AdventOfCode-AoC-</a>
+                        <p>Advent of Code challenges done in different languages</p>
                         <div className='tags'>
-                            <span className='tag'>Python</span>
-                            <span className='tag'>RESTful API</span>
-                            <span className='tag'>BeautifulSoup</span>
-                            <span className='tag'>SQLite</span>
+                            <span className='tag'>C++</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
@@ -139,6 +136,89 @@ const Project: React.FC = () => {
                         <p>LeetCode exercises in Python</p>
                         <div className='tags'>
                             <span className='tag'>Python</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                    <li
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/LeetCode-Sql">LeetCode-Sql</a>
+                        <p>LeetCode exercises in SQL</p>
+                        <div className='tags'>
+                            <span className='tag'>SQL</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                </div>
+                <div className="project-group">
+                    <li
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/Neovim-Config">Neovim-Config</a>
+                        <p>Personal Neovim configuration</p>
+                        <div className='tags'>
+                            <span className='tag'>Neovim</span>
+                            <span className='tag'>Lua Scripting</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                    <li
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/VsCodeConfig/tree/main/Images">VsCodeConfig</a>
+                        <p>Personal VsCode configuration</p>
+                        <div className='tags'>
+                            <span className='tag'>VsCode</span>
+                            <span className='tag'>JSON</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                </div>
+                <div className="project-group">
+                    <li
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/62444-DataVisualization-Analysis">62444-DataVisualization-Analysis</a>
+                        <p>University project in 62444 - Data Visualization and Analysis</p>
+                        <div className='tags'>
+                            <span className='tag'>Python</span>
+                            <span className='tag'>Data Visualization & Analysis</span>
+                            <span className='tag'>Jupyter</span>
+                            <span className='tag'>Pandas</span>
+                            <span className='tag'>Matplotlib</span>
+                            <span className='tag'>Seaborn</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                    <li 
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/ConwaysGameOfLife">ConwaysGameOfLife</a>
+                        <p>Implementation of Conway's Game of Life using Python</p>
+                        <div className='tags'>
+                            <span className='tag'>Python</span>
+                            <span className='tag'>Pygame</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                </div>
+                <div className="project-group">
+                    <li
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/62413-Project">62413-Project</a>
+                        <p>University project in 62413 - C# .NET WPF project</p>
+                        <div className='tags'>
+                            <span className='tag'>C#</span>
+                            <span className='tag'>.NET</span>
+                            <span className='tag'>WPF</span>
+                            <span className='tag'>Socket Programming</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
@@ -190,77 +270,25 @@ const Project: React.FC = () => {
                         onMouseEnter={createStars} 
                         onMouseLeave={removeStars}
                     >
-                        <a href="https://github.com/DenizIsikli/AlgorithmAndDataStructures">AlgorithmAndDataStructures</a>
-                        <p>Implementation of algorithms and data structures in Java for 02326 - Algorithms and Data Structures</p>
+                        <a href="https://github.com/DenizIsikli/PriceRunnerAPI">PriceRunnerAPI</a>
+                        <p>A RESTful API enabling streamlined product searches on Denmark's version of PriceRunner, providing structured product information retrieval.</p>
+                        <div className='tags'>
+                            <span className='tag'>Python</span>
+                            <span className='tag'>RESTful API</span>
+                            <span className='tag'>BeautifulSoup</span>
+                            <span className='tag'>SQLite</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                    <li 
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/02327-DatabaseProject">02327-DatabaseProject</a>
+                        <p>University project in 02327 - Database Project</p>
                         <div className='tags'>
                             <span className='tag'>Java</span>
-                        </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
-                    </li>
-                    <li 
-                        onMouseEnter={createStars} 
-                        onMouseLeave={removeStars}
-                    >
-                        <a href="https://github.com/DenizIsikli/02393-Programming-in-CPP">02393-Programming-in-CPP</a>
-                        <p>C++ exercises</p>
-                        <div className='tags'>
-                            <span className='tag'>C++</span>
-                        </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
-                    </li>
-                </div>
-                <div className="project-group">
-                    <li
-                        onMouseEnter={createStars} 
-                        onMouseLeave={removeStars}
-                    >
-                        <a href="https://github.com/DenizIsikli/62444-DataVisualization-Analysis">62444-DataVisualization-Analysis</a>
-                        <p>University project in 62444 - Data Visualization and Analysis</p>
-                        <div className='tags'>
-                            <span className='tag'>Python</span>
-                            <span className='tag'>Data Visualization & Analysis</span>
-                            <span className='tag'>Jupyter</span>
-                            <span className='tag'>Pandas</span>
-                            <span className='tag'>Matplotlib</span>
-                            <span className='tag'>Seaborn</span>
-                        </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
-                    </li>
-                    <li 
-                        onMouseEnter={createStars} 
-                        onMouseLeave={removeStars}
-                    >
-                        <a href="https://github.com/DenizIsikli/ConwaysGameOfLife">ConwaysGameOfLife</a>
-                        <p>Implementation of Conway's Game of Life using Python</p>
-                        <div className='tags'>
-                            <span className='tag'>Python</span>
-                            <span className='tag'>Pygame</span>
-                        </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
-                    </li>
-                </div>
-                <div className="project-group">
-                    <li
-                        onMouseEnter={createStars} 
-                        onMouseLeave={removeStars}
-                    >
-                        <a href="https://github.com/DenizIsikli/Neovim-Config">Neovim-Config</a>
-                        <p>Personal Neovim configuration</p>
-                        <div className='tags'>
-                            <span className='tag'>Neovim</span>
-                            <span className='tag'>Lua Scripting</span>
-                        </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
-                    </li>
-                    <li
-                        onMouseEnter={createStars} 
-                        onMouseLeave={removeStars}
-                    >
-                        <a href="https://github.com/DenizIsikli/VsCodeConfig/tree/main/Images">VsCodeConfig</a>
-                        <p>Personal VsCode configuration</p>
-                        <div className='tags'>
-                            <span className='tag'>VsCode</span>
-                            <span className='tag'>JSON</span>
+                            <span className='tag'>SQL</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
@@ -285,6 +313,30 @@ const Project: React.FC = () => {
                         <p>Developed a World Of Warcraft extension aimed at simplifying various tasks</p>
                         <div className='tags'>
                             <span className='tag'>Lua</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                </div>
+                <div className="project-group">
+                    <li 
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/AlgorithmAndDataStructures">AlgorithmAndDataStructures</a>
+                        <p>Implementation of algorithms and data structures in Java for 02326 - Algorithms and Data Structures</p>
+                        <div className='tags'>
+                            <span className='tag'>Java</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                    <li 
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/02393-Programming-in-CPP">02393-Programming-in-CPP</a>
+                        <p>C++ exercises</p>
+                        <div className='tags'>
+                            <span className='tag'>C++</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
