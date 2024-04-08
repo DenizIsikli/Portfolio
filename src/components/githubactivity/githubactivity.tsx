@@ -37,7 +37,7 @@ const GithubActivity = () => {
                     const commitDate = commit.date;
                     const today = new Date();
                     const daysDiff = Math.floor((today.getTime() - commitDate.getTime()) / (1000 * 3600 * 24));
-                    return daysDiff <= 30;
+                    return daysDiff <= 20;
                 });
   
             // Sort commits by date

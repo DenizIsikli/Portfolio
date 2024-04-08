@@ -15,7 +15,7 @@ html, body {
 .back-arrow {
     position: fixed;
     top: 50%;
-    left: 8.5%;
+    left: 10%;
     transform: translateY(-50%);
     color: #fff;
     font-size: 24px;
@@ -78,7 +78,7 @@ html, body {
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 0.5rem;
-    color: #c9d1d9;
+    color: #fff;
 }
 
 .commit p:last-of-type {

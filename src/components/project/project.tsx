@@ -76,11 +76,13 @@ const Project: React.FC = () => {
                         onMouseEnter={createStars} 
                         onMouseLeave={removeStars}
                     >
-                        <a href="https://github.com/DenizIsikli/CDIO">CDIO</a>
-                        <p>Collaborative university project in 62410 - CDIO-Project, utilizing image recognition technology to achieve specific objectives</p>
-                        <div className='tags'>
-                            <span className='tag'>Python</span>
-                            <span className='tag'>OpenCV</span>
+                        <a href="https://github.com/DenizIsikli/UselessBotWebsite">UselessBotWebsite</a>
+                        <p>Website created for my discord bot, showcasing the bot's features</p>
+                        <div className='tags'>             
+                            <span className='tag'>React</span>
+                            <span className='tag'>Typescript</span>
+                            <span className='tag'>HTML</span>
+                            <span className='tag'>CSS</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
@@ -101,13 +103,10 @@ const Project: React.FC = () => {
                         onMouseEnter={createStars} 
                         onMouseLeave={removeStars}
                     >
-                        <a href="https://github.com/DenizIsikli/UselessBotWebsite">UselessBotWebsite</a>
-                        <p>Website created for my discord bot, showcasing the bot's features</p>
-                        <div className='tags'>             
-                            <span className='tag'>React</span>
-                            <span className='tag'>Typescript</span>
-                            <span className='tag'>HTML</span>
-                            <span className='tag'>CSS</span>
+                        <a href="https://github.com/DenizIsikli/Codeforces">Codeforces</a>
+                        <p>Codeforces in C++</p>
+                        <div className='tags'>
+                            <span className='tag'>C++</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
@@ -115,14 +114,10 @@ const Project: React.FC = () => {
                         onMouseEnter={createStars} 
                         onMouseLeave={removeStars}
                     >
-                        <a href="https://github.com/DenizIsikli/Spyware">Spyware</a>
-                        <p>Developed Spyware in Python</p>
+                        <a href="https://github.com/DenizIsikli/LeetCode-CPP">LeetCode-CPP</a>
+                        <p>LeetCode exercises in C++</p>
                         <div className='tags'>
-                            <span className='tag'>Python</span>
-                            <span className='tag'>OOP</span>
-                            <span className='tag'>Multi Processing</span>
-                            <span className='tag'>Cryptography</span>
-                            <span className='tag'>smtplib</span>
+                            <span className='tag'>C++</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
@@ -147,6 +142,35 @@ const Project: React.FC = () => {
                         <p>LeetCode exercises in SQL</p>
                         <div className='tags'>
                             <span className='tag'>SQL</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                </div>
+                <div className="project-group">
+                    <li 
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/CDIO">CDIO</a>
+                        <p>Collaborative university project in 62410 - CDIO-Project, utilizing image recognition technology to achieve specific objectives</p>
+                        <div className='tags'>
+                            <span className='tag'>Python</span>
+                            <span className='tag'>OpenCV</span>
+                        </div>
+                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                    <li 
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/Spyware">Spyware</a>
+                        <p>Developed Spyware in Python</p>
+                        <div className='tags'>
+                            <span className='tag'>Python</span>
+                            <span className='tag'>OOP</span>
+                            <span className='tag'>Multi Processing</span>
+                            <span className='tag'>Cryptography</span>
+                            <span className='tag'>smtplib</span>
                         </div>
                         {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
