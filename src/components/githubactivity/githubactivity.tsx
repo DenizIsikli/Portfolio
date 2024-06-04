@@ -56,7 +56,7 @@ const GithubActivity = () => {
             {commits.map((commit, index) => (
                 <div key={index} className="commit">
                     <h3>{commit.repo}</h3>
-                    <p>{commit.message}</p>
+                    <p className="commit_message">{commit.message}</p>
                     <p>{commit.date.toLocaleDateString()}</p>
                 </div>
             ))}

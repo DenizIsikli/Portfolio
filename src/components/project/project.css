@@ -32,8 +32,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     width: 100vw;
     min-height: 100vh;
+}
+
+.project .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: sparkle 2s infinite ease-in-out;
+    display: block;
 }
 
 .project-section {
@@ -54,7 +65,6 @@ body {
     position: relative;
     background: #1e1e1e;
     list-style: none;
-    position: relative;
     z-index: 1;
     margin: 10px;
     flex-basis: calc(33.333% - 70px);
@@ -68,20 +78,8 @@ body {
 .project-group li:hover {
     transform: translateY(-5px);
     box-shadow: 0px 6px 35px rgba(62, 17, 224, 0.8);
-}
-
-.project-section li .star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background-color: #fff;
-    border-radius: 50%;
-    animation: sparkle 1.5s infinite ease-in-out;
-    display: none;
-}
-
-.project-section li:hover .star {
-    display: block;
+    filter: brightness(0.9);
+    z-index: 2;
 }
 
 @keyframes sparkle {
@@ -109,7 +107,7 @@ body {
 }
 
 .project-section a:hover {
-    opacity: 0.4;
+    text-shadow: 0 0 50px #fff;
 }
 
 .project-section a::before {

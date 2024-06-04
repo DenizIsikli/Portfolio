@@ -74,6 +74,18 @@ html, body {
     color: #58a6ff;
 }
 
+.commit_message {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.commit_message:hover {
+    overflow: visible;
+    font-size: 0.75rem;
+}
+
 .commit p {
     font-size: 0.95rem;
     line-height: 1.6;

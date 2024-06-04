@@ -7,7 +7,7 @@ const Project: React.FC = () => {
     const [stars, setStars] = useState<JSX.Element[]>([]);
 
     const createStars = () => {
-        const starCount = 300;
+        const starCount = 500;
         const starsList: JSX.Element[] = [];
 
         for (let i = 0; i < starCount; i++) {
@@ -53,7 +53,6 @@ const Project: React.FC = () => {
                             <span className='tag'>HTML</span>
                             <span className='tag'>CSS</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                     <li 
                         onMouseEnter={createStars} 
@@ -68,7 +67,6 @@ const Project: React.FC = () => {
                             <span className='tag'>RESTful API</span>
                             <span className='tag'>Dockerfile</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                 </div>
                 <div className="project-group">
@@ -84,7 +82,6 @@ const Project: React.FC = () => {
                             <span className='tag'>HTML</span>
                             <span className='tag'>CSS</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                     <li 
                         onMouseEnter={createStars} 
@@ -95,7 +92,6 @@ const Project: React.FC = () => {
                         <div className='tags'>
                             <span className='tag'>C++</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                 </div>
                 <div className="project-group">
@@ -108,7 +104,6 @@ const Project: React.FC = () => {
                         <div className='tags'>
                             <span className='tag'>C++</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                     <li 
                         onMouseEnter={createStars} 
@@ -119,7 +114,6 @@ const Project: React.FC = () => {
                         <div className='tags'>
                             <span className='tag'>C++</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                 </div>
                 <div className="project-group">
@@ -132,7 +126,6 @@ const Project: React.FC = () => {
                         <div className='tags'>
                             <span className='tag'>Python</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                     <li
                         onMouseEnter={createStars} 
@@ -143,7 +136,30 @@ const Project: React.FC = () => {
                         <div className='tags'>
                             <span className='tag'>SQL</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
+                    </li>
+                </div>
+                <div className="project-group">
+                    <li
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/Neovim-Config">Neovim-Config</a>
+                        <p>Personal Neovim configuration</p>
+                        <div className='tags'>
+                            <span className='tag'>Neovim</span>
+                            <span className='tag'>Lua Scripting</span>
+                        </div>
+                    </li>
+                    <li
+                        onMouseEnter={createStars} 
+                        onMouseLeave={removeStars}
+                    >
+                        <a href="https://github.com/DenizIsikli/VsCodeConfig/tree/main/Images">VsCodeConfig</a>
+                        <p>Personal VsCode configuration</p>
+                        <div className='tags'>
+                            <span className='tag'>VsCode</span>
+                            <span className='tag'>JSON</span>
+                        </div>
                     </li>
                 </div>
                 <div className="project-group">
@@ -157,7 +173,6 @@ const Project: React.FC = () => {
                             <span className='tag'>Python</span>
                             <span className='tag'>OpenCV</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                     <li 
                         onMouseEnter={createStars} 
@@ -172,33 +187,6 @@ const Project: React.FC = () => {
                             <span className='tag'>Cryptography</span>
                             <span className='tag'>smtplib</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
-                    </li>
-                </div>
-                <div className="project-group">
-                    <li
-                        onMouseEnter={createStars} 
-                        onMouseLeave={removeStars}
-                    >
-                        <a href="https://github.com/DenizIsikli/Neovim-Config">Neovim-Config</a>
-                        <p>Personal Neovim configuration</p>
-                        <div className='tags'>
-                            <span className='tag'>Neovim</span>
-                            <span className='tag'>Lua Scripting</span>
-                        </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
-                    </li>
-                    <li
-                        onMouseEnter={createStars} 
-                        onMouseLeave={removeStars}
-                    >
-                        <a href="https://github.com/DenizIsikli/VsCodeConfig/tree/main/Images">VsCodeConfig</a>
-                        <p>Personal VsCode configuration</p>
-                        <div className='tags'>
-                            <span className='tag'>VsCode</span>
-                            <span className='tag'>JSON</span>
-                        </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                 </div>
                 <div className="project-group">
@@ -216,7 +204,6 @@ const Project: React.FC = () => {
                             <span className='tag'>Matplotlib</span>
                             <span className='tag'>Seaborn</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                     <li 
                         onMouseEnter={createStars} 
@@ -228,7 +215,6 @@ const Project: React.FC = () => {
                             <span className='tag'>Python</span>
                             <span className='tag'>Pygame</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                 </div>
                 <div className="project-group">
@@ -244,7 +230,6 @@ const Project: React.FC = () => {
                             <span className='tag'>WPF</span>
                             <span className='tag'>Socket Programming</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                     <li 
                         onMouseEnter={createStars} 
@@ -256,7 +241,6 @@ const Project: React.FC = () => {
                             <span className='tag'>C++</span>
                             <span className='tag'>Socket Programming</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                 </div>
                 <div className="project-group">
@@ -272,7 +256,6 @@ const Project: React.FC = () => {
                             <span className='tag'>BeautifulSoup</span>
                             <span className='tag'>SQLite</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                     <li
                         onMouseEnter={createStars} 
@@ -286,7 +269,6 @@ const Project: React.FC = () => {
                             <span className='tag'>Scrapy</span>
                             <span className='tag'>SQLite</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                 </div>
                 <div className="project-group">
@@ -302,7 +284,6 @@ const Project: React.FC = () => {
                             <span className='tag'>BeautifulSoup</span>
                             <span className='tag'>SQLite</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                     <li 
                         onMouseEnter={createStars} 
@@ -314,7 +295,6 @@ const Project: React.FC = () => {
                             <span className='tag'>Java</span>
                             <span className='tag'>SQL</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                 </div>
                 <div className="project-group">
@@ -327,7 +307,6 @@ const Project: React.FC = () => {
                         <div className='tags'>
                             <span className='tag'>C</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                     <li 
                         onMouseEnter={createStars} 
@@ -338,7 +317,6 @@ const Project: React.FC = () => {
                         <div className='tags'>
                             <span className='tag'>Lua</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                 </div>
                 <div className="project-group">
@@ -351,7 +329,6 @@ const Project: React.FC = () => {
                         <div className='tags'>
                             <span className='tag'>Java</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                     <li 
                         onMouseEnter={createStars} 
@@ -362,11 +339,11 @@ const Project: React.FC = () => {
                         <div className='tags'>
                             <span className='tag'>C++</span>
                         </div>
-                        {stars.length > 0 && <div className='star-container'>{stars}</div>}
                     </li>
                 </div>
             </ul>
         </section>
+        {stars.length > 0 && <div className='star-container'>{stars}</div>}
     </div>
     );
 }
