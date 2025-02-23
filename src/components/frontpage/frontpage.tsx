@@ -82,7 +82,7 @@ const Frontpage: React.FC = () => {
 
             {/* Right Side - Skills, Projects, Experience */}
             <div className="right-side w-1/2 overflow-y-auto p-8 text-left">
-                <div className="space-y-8 pt-15">
+                <div className="space-y-8 pt-12">
                     <section>
                         <h2 className="text-2xl font-semibold">Projects</h2>
                         <div className="max-w-lg mt-4">
