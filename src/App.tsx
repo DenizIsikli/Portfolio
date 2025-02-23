@@ -1,23 +1,20 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { } from 'react'
 import Frontpage from './components/frontpage/frontpage';
-import Project from './components/project/project';
-import GitHubActivity from './components/githubactivity/githubactivity';
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './App.css'
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Frontpage />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/githubactivity" element={<GitHubActivity />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
+    <>
+      <div>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Frontpage />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
