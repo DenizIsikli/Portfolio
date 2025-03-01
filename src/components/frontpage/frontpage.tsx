@@ -43,7 +43,10 @@ const Frontpage: React.FC = () => {
                 </div>
                 <div className="flex flex-col items-start text-left mx-auto">
                     <h2 className="text-3xl font-bold">Deniz Isikli</h2>
-                    <p className="text-xl mt-2">Copenhagen, Denmark</p>
+                    <div className="flex items-center text-lg mt-2">
+                        <span>📍</span>
+                        <p className="text-gray-400 ml-1">Copenhagen, Denmark</p>
+                    </div>
                     <p className="text-base mt-2">Software Engineering student &nbsp;
                         <a href="https://en.wikipedia.org/wiki/Technical_University_of_Denmark" className="text-base hover:text-gray-400" rel="noopener noreferrer" target="_blank">
                             @Denmark's Technical University
