@@ -54,6 +54,10 @@ export const skills: SkillCategory[] = [
     title: "Frameworks",
     items: [
       {
+        name: "Docker",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      },
+      {
         name: ".NET Core",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
       },
