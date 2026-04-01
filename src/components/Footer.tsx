@@ -9,7 +9,7 @@ const Footer: FC = () => {
           <div className="space-y-2">
             <h3 className="text-lg font-semibold">Deniz Isikli</h3>
             <p className="max-w-md text-sm text-muted-foreground">
-              Software Engineering student passionate about building scalable systems, automation, and high-performance solutions.
+                Computer Science student at DTU with a passion for software development, and competitive programming.
             </p>
           </div>
 

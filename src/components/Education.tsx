@@ -1,5 +1,6 @@
 import { FC } from "react"
 import { education } from "../data/education"
+import DTULogo from '../assets/DTU.png'
 
 const Education: FC = () => {
   return (
@@ -17,17 +18,17 @@ const Education: FC = () => {
               key={index}
               className="rounded-md border border-border bg-card p-5 shadow-sm"
             >
-              <h3 className="text-lg font-semibold">{edu.degree}</h3>
-              <h4 className="text-sm text-muted-foreground">
-                {edu.institution}
-              </h4>
-              <p className="text-xs text-muted-foreground mt-1">
-                {edu.period}
-              </p>
-
-              {edu.extra && (
-                <p className="mt-2 text-sm">{edu.extra}</p>
-              )}
+            <div className="flex items-center gap-4">
+                <img src={DTULogo} alt="DTU Logo" className="w-16 h-16 object-contain rounded-sm" />
+                <div>
+                    <h3 className="text-lg font-semibold">{edu.degree}</h3>
+                    <p className="text-sm text-muted-foreground">{edu.institution}</p>
+                    <p className="text-xs text-muted-foreground mt-1">{edu.period}</p>
+                    {edu.extra && (
+                      <p className="mt-2 text-sm">{edu.extra}</p>
+                    )}
+                </div>
+            </div>
             </div>
           ))}
         </div>

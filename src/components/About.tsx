@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa"
-import { BsTwitterX } from "react-icons/bs"
+import { SiCodeforces, SiLeetcode } from "react-icons/si"
 import { ReactTyped } from 'react-typed'
 import Portrait from '../assets/Bronny.png'
 import { profile } from '../data/profile'
@@ -158,14 +158,24 @@ const About: FC = () => {
               <FaGithub />
             </motion.a>
             <motion.a
-              href={profile.social.x}
+              href={profile.social.codeforces}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="x"
               className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
               whileHover={{ scale: 1.1, rotate: -5 }}
               whileTap={{ scale: 0.95 }}>
-              <BsTwitterX />
+              <SiCodeforces />
+            </motion.a>
+            <motion.a
+              href={profile.social.leetcode}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="x"
+              className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
+              whileHover={{ scale: 1.1, rotate: -5 }}
+              whileTap={{ scale: 0.95 }}>
+              <SiLeetcode />
             </motion.a>
           </motion.div>
         </motion.div>

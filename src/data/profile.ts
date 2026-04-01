@@ -9,7 +9,8 @@ export type Profile = {
     email: string
     linkedin: string
     github: string
-    x?: string
+    codeforces: string
+    leetcode: string
   }
 }
 
@@ -17,18 +18,20 @@ export const profile: Profile = {
   name: "Deniz Isikli",
   titles: [
     "Software Engineering Student",
-    "Fullstack Developer",
-    "Backend-Focused Developer",
+    "Intern at Artelia A/S",
+    "DSA Enthusiast",
   ],
   bio: [
-    "Software Engineering student based in Copenhagen, building efficient and scalable systems.",
-    "Experience with C++, .NET, SQL, and automation workflows in real-world engineering projects.",
-    "Strong focus on backend development, problem solving, and clean system design.",
+    "MSc Computer Science and Engineering student at the Technical University of Denmark.",
+    "Intern at Artelia A/S, contributing to software solutions in the construction industry.", 
+    "DSA enthusiast with a passion for competitive programming and algorithms.",
   ],
   image: Portrait,
   social: {
     email: "denizisikli7@gmail.com",
     linkedin: "https://www.linkedin.com/in/deniz-isikli/",
     github: "https://github.com/DenizIsikli",
+    codeforces: "https://codeforces.com/profile/Berxwedan",
+    leetcode: "https://leetcode.com/u/DenizIsikli/",
   },
 }

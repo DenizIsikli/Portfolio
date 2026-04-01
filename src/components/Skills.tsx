@@ -110,39 +110,41 @@ const Skills: FC = () => {
                     }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <div className="relative">
-                      {/* Glow effect on hover */}
-                      <motion.div 
-                        className="absolute inset-0 bg-gradient-to-r from-primary/20 to-purple-500/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                        animate={{ 
-                          scale: [1, 1.1, 1],
-                          opacity: [0, 0.3, 0]
-                        }}
-                        transition={{ 
-                          duration: 2,
-                          repeat: Infinity,
-                          ease: "easeInOut"
-                        }}
-                      />
-                      
-                      <div className="relative h-16 w-16 flex items-center justify-center rounded-xl bg-gradient-to-br from-card to-muted/50 border border-border/50 group-hover:border-primary/50 transition-all duration-300 group-hover:shadow-lg">
-                        <motion.img 
-                          src={skill.icon} 
-                          alt={skill.name} 
-                          className="max-h-8 max-w-8 transition-transform duration-300 group-hover:scale-110" 
-                          loading="lazy"
-                          whileHover={{ rotate: 360 }}
-                          transition={{ duration: 0.6 }}
+                  <div className="flex flex-col items-center text-center">
+                  <div className="relative">
+                    {/* Glow effect on hover */}
+                    <motion.div 
+                    className="absolute inset-0 bg-gradient-to-r from-primary/20 to-purple-500/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    animate={{ 
+                      scale: [1, 1.1, 1],
+                      opacity: [0, 0.3, 0]
+                    }}
+                    transition={{ 
+                      duration: 2,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                    />
+
+                    <div className="relative h-16 w-16 flex items-center justify-center rounded-xl bg-gradient-to-br from-card to-muted/50 border border-border/50 group-hover:border-primary/50 transition-all duration-300 group-hover:shadow-lg">
+                    <motion.img 
+                        src={skill.icon} 
+                        alt={skill.name} 
+                        className="max-h-8 max-w-8 transition-transform duration-300 group-hover:scale-110" 
+                        loading="lazy"
+                        whileHover={{ rotate: 360 }}
+                        transition={{ duration: 0.6 }}
                         />
-                      </div>
-                    </div>
-                    
-                    <motion.span 
-                      className="block text-center text-xs text-muted-foreground group-hover:text-foreground transition-colors duration-300 mt-2"
-                      whileHover={{ y: -2 }}
-                    >
-                      {skill.name}
+                        </div>
+                        </div>
+
+                        <motion.span 
+                        className="mt-2 text-xs text-muted-foreground group-hover:text-foreground transition-colors duration-300"
+                        whileHover={{ y: -2 }}
+                        >
+                        {skill.name}
                     </motion.span>
+                    </div>
                   </motion.div>
                 ))}
               </div>

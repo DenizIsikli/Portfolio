@@ -88,9 +88,6 @@ const Projects: FC = () => {
                     >
                       {proj.title}
                     </motion.h3>
-                    <p className="mt-1 text-xs text-muted-foreground">
-                      <strong>Period:</strong> {proj.period}
-                    </p>
                   </div>
                   <Dialog.Root>
                     <Dialog.Trigger asChild>
@@ -109,9 +106,6 @@ const Projects: FC = () => {
                         <Dialog.Title className="text-lg font-semibold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
                           {proj.title}
                         </Dialog.Title>
-                        <Dialog.Description className="text-sm text-muted-foreground mt-1">
-                          {proj.period}
-                        </Dialog.Description>
                         <ul className="mt-4 list-disc pl-5 space-y-2 text-sm text-muted-foreground">
                           {proj.bullets.map((b, i) => (
                             <motion.li 

@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 const Experience: FC = () => {
   return (
-    <section id="experience" className="py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+    <section id="experience" className="py-16 sm:py-24 lg:py-18 relative overflow-hidden">
         {/* Animated background elements */}
         <div className="absolute inset-0 -z-10">
             <motion.div 

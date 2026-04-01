@@ -1,59 +1,129 @@
 export type Project = {
-  title: string
-  period: string
-  bullets: string[]
-  links: {
-    code: string | null
-    demo: string | null
-  }
-  tags: string[]
+    title: string
+    bullets: string[]
+    links: {
+        code: string | null
+        demo: string | null
+    }
+    tags: string[]
 }
 
 export const projects: Project[] = [
-  {
-    title: 'AI-Powered Chatbot',
-    period: 'April 2025 - May 2025',
-    bullets: [
-      'Constructed an AI chatbot using MERN stack and Gemini API for dynamic conversation flow.',
-      'Responsive UI in React with real-time Socket.io communication.',
-      'Backend with Node.js, Express, and MongoDB for scalable session tracking.',
-      'Gemini API for natural interactions with contextual memory.',
-    ],
-    links: {
-      code: 'https://github.com/adityaSrivastava29/AI-Powered-Chatbot',
-      demo: null,
+    {
+        title: 'Dotfiles',
+        bullets: [
+            'Cross-platform dotfiles for Linux, WSL, and Windows with automated setup scripts.',
+            'Custom Neovim configuration with plugins, keymaps, and modular setup.',
+            'Terminal and shell environment tailored with Zsh and modern tooling.',
+            'Tmux integration for efficient terminal workflows.',
+        ],
+        links: {
+            code: 'https://github.com/DenizIsikli/Dotfiles',
+            demo: null,
+        },
+        tags: [
+            'Neovim',
+            'Zsh',
+            'Tmux',
+            'Git',
+            'Linux',
+            'WSL',
+            'Automation'
+        ],
     },
-    tags: ['React', 'Node.js', 'MongoDB', 'Socket.io', 'Gemini API'],
-  },
-  {
-    title: 'Movie Mahal',
-    period: 'January 2023 - June 2023',
-    bullets: [
-      'Movie discovery platform using React, Redux, and TMDB API.',
-      'Responsive design with Grid/Flexbox.',
-      'Authentication and watchlists via Firebase.',
-      'Lazy loading and code splitting optimizations.',
-      'Admin panel for management.',
-    ],
-    links: {
-      code: 'https://adityasrivastava29.github.io/',
-      demo: 'https://adityasrivastava29.github.io/',
+    {
+        title: 'Portfolio',
+        bullets: [
+            'Personal portfolio website showcasing projects, skills, and experience.',
+            'Built with TypeScript and modern frontend tooling.',
+            'Responsive design with clean UI and smooth navigation.',
+            'Deployed as a live site for public access and professional presence.',
+        ],
+        links: {
+            code: 'https://github.com/DenizIsikli/Portfolio',
+            demo: 'https://denizisikli.netlify.app/',
+        },
+        tags: [
+            'TypeScript',
+            'Frontend',
+            'Portfolio',
+            'Web Development'
+        ],
     },
-    tags: ['React', 'Redux', 'Firebase', 'TMDB'],
-  },
-  {
-    title: 'Task Management System',
-    period: 'May 2025 - Present',
-    bullets: [
-      'React, TypeScript, Express.js; improved collaboration by 30%.',
-      'Real-time updates with WebSocket.',
-      'PostgreSQL for efficient data at scale.',
-      'Deployed on AWS with CI/CD.',
-    ],
-    links: {
-      code: 'https://adityasrivastava29.github.io/',
-      demo: 'https://adityasrivastava29.github.io/',
+    {
+        title: 'Codeforces Solutions',
+        bullets: [
+            'Collection of competitive programming solutions from Codeforces.',
+            'Problems solved and implemented in C++.',
+            'Covers a range of algorithms and data structures.',
+            'Organized by contest and problem for easy reference.',
+        ],
+        links: {
+            code: 'https://github.com/DenizIsikli/Codeforces',
+            demo: null,
+        },
+        tags: [
+            'C++',
+            'Algorithms',
+            'Data Structures',
+            'Competitive Programming'
+        ],
     },
-    tags: ['React', 'TypeScript', 'Express', 'PostgreSQL', 'WebSocket'],
-  },
+    {
+        title: 'LeetCode C++ Solutions',
+        bullets: [
+            'Collection of LeetCode problem solutions implemented in C++.',
+            'Focus on data structures and algorithms across common patterns.',
+            'Problems organized by topic and difficulty for structured practice.',
+            'Used for consistent problem-solving and interview preparation.',
+        ],
+        links: {
+            code: 'https://github.com/DenizIsikli/LeetCode-CPP',
+            demo: null,
+        },
+        tags: [
+            'C++',
+            'Algorithms',
+            'Data Structures',
+            'Competitive Programming'
+        ],
+    },
+    {
+        title: 'Advent of Code',
+        bullets: [
+            'Solutions to Advent of Code challenges across multiple years.',
+            'Focus on algorithmic problem-solving and optimization.',
+            'Implemented primarily in C++ with clean and reusable approaches.',
+            'Covers a wide range of puzzles and computational techniques.',
+        ],
+        links: {
+            code: 'https://github.com/DenizIsikli/AdventOfCode-AoC',
+            demo: null,
+        },
+        tags: [
+            'C++',
+            'Algorithms',
+            'Problem Solving',
+            'Advent of Code'
+        ],
+    },
+    {
+        title: 'Discord Bot',
+        bullets: [
+            'Custom Discord bot integrating multiple third-party APIs.',
+            'Includes self-built APIs for extended functionality.',
+            'Handles commands, events, and dynamic user interactions.',
+            'Designed for scalability and modular feature expansion.',
+        ],
+        links: {
+            code: 'https://github.com/DenizIsikli/DcQueryBot',
+            demo: null,
+        },
+        tags: [
+            'Python',
+            'Discord Bot API',
+            'APIs',
+            'Flask'
+        ],
+    },
 ]

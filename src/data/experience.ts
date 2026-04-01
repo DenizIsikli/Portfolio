@@ -7,12 +7,12 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
-    title: "SWE Student Job - CAD Software Development",
-    company: "Artelia, Søborg",
+    title: "SWE Student Job - Software Development",
+    company: "Artelia, Søborg/Valby",
     period: "2025 - Present",
     bullets: [
-      "Develop .NET applications, automate workflows, and integrate SQL-based solutions.",
-      "Work with Bentley SDK and batch processing to improve engineering project efficiency.",
+      "Worked on a transportation modeling system used to support data-driven decision-making for public infrastructure investments and transit planning.",
+      "Developed automation tools using the Bentley SDK and .NET Core to streamline workflows and task execution within ProjectWise environments.",
     ],
   },
   {
@@ -20,8 +20,8 @@ export const experience: ExperienceItem[] = [
     company: "Artelia, Søborg",
     period: "2024 - 2025",
     bullets: [
-      "Built automated QA system for DGN files using Bentley SDK and batch processing.",
-      "Developed .NET Core DLLs to automate tasks in ProjectWise.",
+      "Implemented a CAD quality assurance pipeline that streamlines engineer workflows by automating standard compliance checks, significantly reducing turnaround time and increasing reliability of deliverables.",
+      "Developed automation tools using the Bentley SDK and .NET Core to streamline workflows and task execution within ProjectWise environments.",
       "Created file crawling system for data extraction and SQL integration.",
     ],
   },
