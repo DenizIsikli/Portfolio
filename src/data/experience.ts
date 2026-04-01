@@ -1,9 +1,9 @@
 export type ExperienceItem = {
-  title: string
-  company: string
-  period: string
-  bullets: string[]
-}
+  title: string;
+  company: string;
+  period: string;
+  bullets: string[];
+};
 
 export const experience: ExperienceItem[] = [
   {
@@ -25,4 +25,4 @@ export const experience: ExperienceItem[] = [
       "Created file crawling system for data extraction and SQL integration.",
     ],
   },
-]
+];

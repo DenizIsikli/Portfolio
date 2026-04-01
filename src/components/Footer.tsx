@@ -1,5 +1,5 @@
-import { FC } from 'react'
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
+import { FC } from "react";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 const Footer: FC = () => {
   return (
@@ -9,17 +9,46 @@ const Footer: FC = () => {
           <div className="space-y-2">
             <h3 className="text-lg font-semibold">Deniz Isikli</h3>
             <p className="max-w-md text-sm text-muted-foreground">
-                Computer Science student at DTU with a passion for software development, and competitive programming.
+              Computer Science student at DTU with a passion for software
+              development, and competitive programming.
             </p>
           </div>
 
           <div>
             <h3 className="text-lg font-semibold">Links</h3>
             <ul className="mt-3 space-y-2 text-sm">
-              <li><a className="hover:text-primary transition-colors" href="#about">About</a></li>
-              <li><a className="hover:text-primary transition-colors" href="#experience">Experience</a></li>
-              <li><a className="hover:text-primary transition-colors" href="#projects">Projects</a></li>
-              <li><a className="hover:text-primary transition-colors" href="#skills">Skills</a></li>
+              <li>
+                <a
+                  className="hover:text-primary transition-colors"
+                  href="#about"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-primary transition-colors"
+                  href="#experience"
+                >
+                  Experience
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-primary transition-colors"
+                  href="#projects"
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-primary transition-colors"
+                  href="#skills"
+                >
+                  Skills
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -59,15 +88,16 @@ const Footer: FC = () => {
               </li>
             </ul>
           </div>
-
         </div>
 
         <div className="mt-8 border-t border-border pt-4 text-center text-xs text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Deniz Isikli. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Deniz Isikli. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,16 +1,17 @@
-import { FC } from 'react'
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa"
-import { SiCodeforces, SiLeetcode } from "react-icons/si"
-import { ReactTyped } from 'react-typed'
-import Portrait from '../assets/Bronny.png'
-import { profile } from '../data/profile'
-import { motion } from 'framer-motion'
+import { FC } from "react";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { SiCodeforces, SiLeetcode } from "react-icons/si";
+import { ReactTyped } from "react-typed";
+import Portrait from "../assets/Bronny.png";
+import { profile } from "../data/profile";
+import { motion } from "framer-motion";
 
 const About: FC = () => {
   return (
     <section
       id="about"
-      className="container py-16 sm:py-20 lg:py-24 relative overflow-hidden">
+      className="container py-16 sm:py-20 lg:py-24 relative overflow-hidden"
+    >
       {/* Enhanced background decoration */}
       <div className="absolute inset-0 -z-10">
         <motion.div
@@ -62,13 +63,15 @@ const About: FC = () => {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}>
+          transition={{ duration: 0.6 }}
+        >
           <motion.h3
             className="text-3xl sm:text-4xl font-semibold tracking-tight mb-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}>
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             <ReactTyped
               strings={profile.titles}
               typeSpeed={50}
@@ -85,7 +88,8 @@ const About: FC = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}>
+              transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
+            >
               {p}
             </motion.p>
           ))}
@@ -95,7 +99,8 @@ const About: FC = () => {
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1 }}>
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
           <div className="relative group">
             {/* Enhanced glow effect */}
             <motion.div
@@ -128,13 +133,15 @@ const About: FC = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.4 }}>
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
             <motion.a
               href={`mailto:${profile.social.email}`}
               aria-label="Email"
               className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
               whileHover={{ scale: 1.1, rotate: 5 }}
-              whileTap={{ scale: 0.95 }}>
+              whileTap={{ scale: 0.95 }}
+            >
               <FaEnvelope />
             </motion.a>
             <motion.a
@@ -144,7 +151,8 @@ const About: FC = () => {
               aria-label="LinkedIn"
               className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
               whileHover={{ scale: 1.1, rotate: 5 }}
-              whileTap={{ scale: 0.95 }}>
+              whileTap={{ scale: 0.95 }}
+            >
               <FaLinkedin />
             </motion.a>
             <motion.a
@@ -154,7 +162,8 @@ const About: FC = () => {
               aria-label="GitHub"
               className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
               whileHover={{ scale: 1.1, rotate: -5 }}
-              whileTap={{ scale: 0.95 }}>
+              whileTap={{ scale: 0.95 }}
+            >
               <FaGithub />
             </motion.a>
             <motion.a
@@ -164,7 +173,8 @@ const About: FC = () => {
               aria-label="x"
               className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
               whileHover={{ scale: 1.1, rotate: -5 }}
-              whileTap={{ scale: 0.95 }}>
+              whileTap={{ scale: 0.95 }}
+            >
               <SiCodeforces />
             </motion.a>
             <motion.a
@@ -174,14 +184,15 @@ const About: FC = () => {
               aria-label="x"
               className="p-2 rounded-lg bg-gradient-to-r from-primary/10 to-purple-500/10 hover:from-primary/20 hover:to-purple-500/20 transition-all duration-300 hover:scale-110 border border-border/50"
               whileHover={{ scale: 1.1, rotate: -5 }}
-              whileTap={{ scale: 0.95 }}>
+              whileTap={{ scale: 0.95 }}
+            >
               <SiLeetcode />
             </motion.a>
           </motion.div>
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -1,18 +1,18 @@
-    import Portrait from '../assets/Bronny.png'
+import Portrait from "../assets/Bronny.png";
 
 export type Profile = {
-  name: string
-  titles: string[]
-  bio: string[]
-  image: string
+  name: string;
+  titles: string[];
+  bio: string[];
+  image: string;
   social: {
-    email: string
-    linkedin: string
-    github: string
-    codeforces: string
-    leetcode: string
-  }
-}
+    email: string;
+    linkedin: string;
+    github: string;
+    codeforces: string;
+    leetcode: string;
+  };
+};
 
 export const profile: Profile = {
   name: "Deniz Isikli",
@@ -23,7 +23,7 @@ export const profile: Profile = {
   ],
   bio: [
     "MSc Computer Science and Engineering student at the Technical University of Denmark.",
-    "Intern at Artelia A/S, contributing to software solutions in the construction industry.", 
+    "Intern at Artelia A/S, contributing to software solutions in the construction industry.",
     "DSA enthusiast with a passion for competitive programming and algorithms.",
   ],
   image: Portrait,
@@ -34,4 +34,4 @@ export const profile: Profile = {
     codeforces: "https://codeforces.com/profile/Berxwedan",
     leetcode: "https://leetcode.com/u/DenizIsikli/",
   },
-}
+};

@@ -1,9 +1,9 @@
 export type EducationItem = {
-  degree: string
-  institution: string
-  period: string
-  extra?: string
-}
+  degree: string;
+  institution: string;
+  period: string;
+  extra?: string;
+};
 
 export const education: EducationItem[] = [
   {
@@ -16,4 +16,4 @@ export const education: EducationItem[] = [
     institution: "Technical University of Denmark",
     period: "2021 - 2024",
   },
-]
+];

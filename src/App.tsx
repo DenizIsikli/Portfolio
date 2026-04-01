@@ -69,14 +69,14 @@ function App() {
         <Suspense
           fallback={
             <div className="container py-16">
-              <SkeletonGrid count={6}/>
+              <SkeletonGrid count={6} />
             </div>
           }
         >
-            <Experience />
-            <Skills />
-            <Projects />
-            <Education />
+          <Experience />
+          <Skills />
+          <Projects />
+          <Education />
         </Suspense>
       </div>
 

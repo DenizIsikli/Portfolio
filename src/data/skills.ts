@@ -1,12 +1,12 @@
 export type Skill = {
-  name: string
-  icon: string
-}
+  name: string;
+  icon: string;
+};
 
 export type SkillCategory = {
-  title: string
-  items: Skill[]
-}
+  title: string;
+  items: Skill[];
+};
 
 export const skills: SkillCategory[] = [
   {
@@ -137,4 +137,4 @@ export const skills: SkillCategory[] = [
       },
     ],
   },
-]
+];

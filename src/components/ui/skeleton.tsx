@@ -1,7 +1,7 @@
-import { HTMLAttributes } from "react"
-import { cn } from "../../lib/utils"
+import { HTMLAttributes } from "react";
+import { cn } from "../../lib/utils";
 
-type SkeletonProps = HTMLAttributes<HTMLDivElement>
+type SkeletonProps = HTMLAttributes<HTMLDivElement>;
 
 export function Skeleton({ className, ...props }: SkeletonProps) {
   return (
@@ -9,7 +9,7 @@ export function Skeleton({ className, ...props }: SkeletonProps) {
       className={cn("animate-pulse rounded-md bg-muted", className)}
       {...props}
     />
-  )
+  );
 }
 
 export function SkeletonCard() {
@@ -23,12 +23,12 @@ export function SkeletonCard() {
         <Skeleton className="h-3 w-4/6" />
       </div>
     </div>
-  )
+  );
 }
 
 type SkeletonGridProps = {
-  count?: number
-}
+  count?: number;
+};
 
 export function SkeletonGrid({ count = 3 }: SkeletonGridProps) {
   return (
@@ -37,5 +37,5 @@ export function SkeletonGrid({ count = 3 }: SkeletonGridProps) {
         <SkeletonCard key={i} />
       ))}
     </div>
-  )
+  );
 }
