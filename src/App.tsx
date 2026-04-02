@@ -11,8 +11,9 @@ import { SkeletonGrid } from "./components/ui/skeleton";
 
 // Lazy-loaded sections
 const Experience = React.lazy(() => import("./components/Experience"));
-const Projects = React.lazy(() => import("./components/Projects"));
 const Skills = React.lazy(() => import("./components/Skills"));
+const Projects = React.lazy(() => import("./components/Projects"));
+const CodingProfile = React.lazy(() => import("./components/CodingProfiles"));
 const Education = React.lazy(() => import("./components/Education"));
 
 function App() {
@@ -76,6 +77,7 @@ function App() {
           <Experience />
           <Skills />
           <Projects />
+          <CodingProfile />
           <Education />
         </Suspense>
       </div>
