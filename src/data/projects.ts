@@ -33,7 +33,7 @@ export const projects: Project[] = [
     ],
     links: {
       code: "https://github.com/DenizIsikli/Portfolio",
-      demo: "https://denizisikli.netlify.app/",
+      demo: null,
     },
     tags: ["TypeScript", "Frontend", "Portfolio", "Web Development"],
   },
@@ -42,8 +42,7 @@ export const projects: Project[] = [
     bullets: [
       "Collection of competitive programming solutions from Codeforces.",
       "Problems solved and implemented in C++.",
-      "Covers a range of algorithms and data structures.",
-      "Organized by contest and problem for easy reference.",
+      "Organized by rating, contest and upsolved contest problems for structured practice.",
     ],
     links: {
       code: "https://github.com/DenizIsikli/Codeforces",
@@ -55,9 +54,8 @@ export const projects: Project[] = [
     title: "LeetCode C++ Solutions",
     bullets: [
       "Collection of LeetCode problem solutions implemented in C++.",
-      "Focus on data structures and algorithms across common patterns.",
-      "Problems organized by topic and difficulty for structured practice.",
-      "Used for consistent problem-solving and interview preparation.",
+      "Problems solved and implemented in C++.",
+      "Contains over 1000+ solutions across various difficulty levels and topics.",
     ],
     links: {
       code: "https://github.com/DenizIsikli/LeetCode-CPP",
@@ -92,5 +90,136 @@ export const projects: Project[] = [
       demo: null,
     },
     tags: ["Python", "Discord Bot API", "APIs", "Flask"],
+  },
+  {
+    title: "02244 - Logic For Security",
+    bullets: [
+      "Course project for 02244 - Logic For Security at DTU.",
+      "Designed and implemented my own protocol with OFMC tool.",
+      "Focused on security properties and formal verification.",
+      "Analyzed protocol design and potential vulnerabilities.",
+    ],
+    links: {
+      code: "https://github.com/DenizIsikli/02244-LogicForSecurity",
+      demo: null,
+    },
+    tags: ["OFMC", "Protocol Design", "Formal Verification", "Security"],
+  },
+  {
+    title: "02269 - Curriculum optimization PM",
+    bullets: [
+      "Course project for 02269 - Process Mining at DTU.",
+      "Analyzed curriculum data to identify and explore patterns in student progression.",
+      "Performed data processing, process discovery, performance analysis, and conformance checking.",
+      "Provided insights and recommendations for curriculum optimization based on the analysis.",
+    ],
+    links: {
+      code: "https://github.com/DenizIsikli/02269-CurriculumOptimizationPM",
+      demo: null,
+    },
+    tags: [
+      "Process Mining",
+      "Data Analysis",
+      "Curriculum Optimization",
+      "Python",
+      "ProM",
+      "PM4Py",
+      "Disco",
+    ],
+  },
+  {
+    title: "02162 - Software Engineering 2",
+    bullets: [
+      "Course project for 02162 - Software Engineering 2 at DTU.",
+      "Developed a fullstack application for Roborally.",
+      "Used React for the frontend and Spring Boot for the backend.",
+    ],
+    links: {
+      code: "https://github.com/DenizIsikli/02162-SoftwareEngineering",
+      demo: null,
+    },
+    tags: [
+      "React",
+      "Spring Boot",
+      "Fullstack Development",
+      "Software Engineering",
+    ],
+  },
+  {
+    title: "Lindenmayer System",
+    bullets: [
+      "Implemented a Lindenmayer System (L-System) in C++ and SDL2.",
+      "Used for procedural generation of fractal patterns and plant-like structures.",
+    ],
+    links: {
+      code: "https://github.com/DenizIsikli/LindenmayerSystem/blob/main/LindenmayerSystem.cpp",
+      demo: null,
+    },
+    tags: ["C++", "SDL2", "Lindenmayer System", "Procedural Generation"],
+  },
+  {
+    title: "Brians Brain",
+    bullets: [
+      "Implemented Brian's Brain cellular automaton in C++ and SDL2.",
+      "Simulates a simple model of excitable media with three states: on, off, and dying.",
+    ],
+    links: {
+      code: "https://github.com/DenizIsikli/BriansBrain",
+      demo: null,
+    },
+    tags: ["C++", "SDL2", "Cellular Automaton", "Brian's Brain"],
+  },
+  {
+    title: "Random Walk",
+    bullets: [
+      "Implemented a random walk simulation in C++ and SDL2.",
+      "Visualizes the path of a random walker in a 2D grid environment.",
+    ],
+    links: {
+      code: "https://github.com/DenizIsikli/RandomWalk",
+      demo: null,
+    },
+    tags: ["C++", "SDL2", "Random Walk", "Simulation"],
+  },
+  {
+    title: "LeetCode Python Solutions",
+    bullets: [
+      "Collection of LeetCode problem solutions implemented in Python.",
+    ],
+    links: {
+      code: "https://github.com/DenizIsikli/LeetCode-Python",
+      demo: null,
+    },
+    tags: [
+      "Python",
+      "Algorithms",
+      "Data Structures",
+      "Competitive Programming",
+    ],
+  },
+  {
+    title: "LeetCode Typescript Solutions",
+    bullets: [
+      "Collection of LeetCode problem solutions implemented in TypeScript.",
+    ],
+    links: {
+      code: "https://github.com/DenizIsikli/LeetCode-JsTs",
+      demo: null,
+    },
+    tags: [
+      "TypeScript",
+      "Algorithms",
+      "Data Structures",
+      "Competitive Programming",
+    ],
+  },
+  {
+    title: "LeetCode SQL Solutions",
+    bullets: ["Collection of LeetCode problem solutions implemented in SQL."],
+    links: {
+      code: "https://github.com/DenizIsikli/LeetCode-Sql",
+      demo: null,
+    },
+    tags: ["SQL", "Database", "Competitive Programming"],
   },
 ];
