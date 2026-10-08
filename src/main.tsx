@@ -6,11 +6,11 @@ import "./index.css";
 import App from "./App";
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <HelmetProvider>
-      <ThemeProvider>
-        <App />
-      </ThemeProvider>
-    </HelmetProvider>
-  </StrictMode>,
+    <StrictMode>
+        <HelmetProvider>
+            <ThemeProvider>
+                <App />
+            </ThemeProvider>
+        </HelmetProvider>
+    </StrictMode>,
 );

@@ -17,33 +17,33 @@ const CodingProfile = React.lazy(() => import("./components/CodingProfiles"));
 const Education = React.lazy(() => import("./components/Education"));
 
 function App() {
-  return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Helmet>
-        <title>Deniz Isikli - Software Engineer</title>
+    return (
+        <div className="min-h-screen bg-background text-foreground">
+            <Helmet>
+                <title>Deniz Isikli - Software Engineer</title>
 
-        <meta
-          name="description"
-          content="Deniz Isikli — Software Engineering student at DTU. Experience in C++, Python, .NET, and full-stack development. Explore projects, experience, and skills."
-        />
+                <meta
+                    name="description"
+                    content="Deniz Isikli — Software Engineering student at DTU. Experience in C++, Python, .NET, and full-stack development. Explore projects, experience, and skills."
+                />
 
-        <meta
-          name="keywords"
-          content="Deniz Isikli, portfolio, software engineer, DTU, C++, Python, .NET, React, student developer"
-        />
+                <meta
+                    name="keywords"
+                    content="Deniz Isikli, portfolio, software engineer, DTU, C++, Python, .NET, React, student developer"
+                />
 
-        <meta name="author" content="Deniz Isikli" />
+                <meta name="author" content="Deniz Isikli" />
 
-        {/* Open Graph */}
-        <meta property="og:title" content="Deniz Isikli Portfolio" />
-        <meta
-          property="og:description"
-          content="Software Engineering student at DTU. Explore projects, experience, and skills."
-        />
-        <meta property="og:type" content="website" />
+                {/* Open Graph */}
+                <meta property="og:title" content="Deniz Isikli Portfolio" />
+                <meta
+                    property="og:description"
+                    content="Software Engineering student at DTU. Explore projects, experience, and skills."
+                />
+                <meta property="og:type" content="website" />
 
-        {/* Structured Data */}
-        <script type="application/ld+json">{`
+                {/* Structured Data */}
+                <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
             "@type": "Person",
@@ -60,31 +60,31 @@ function App() {
             ]
           }
         `}</script>
-      </Helmet>
+            </Helmet>
 
-      {/* Layout */}
-      <Header />
-      <div className="main-content">
-        <About />
+            {/* Layout */}
+            <Header />
+            <div className="main-content">
+                <About />
 
-        <Suspense
-          fallback={
-            <div className="container py-16">
-              <SkeletonGrid count={6} />
+                <Suspense
+                    fallback={
+                        <div className="container py-16">
+                            <SkeletonGrid count={6} />
+                        </div>
+                    }
+                >
+                    <Experience />
+                    <Skills />
+                    <Projects />
+                    <CodingProfile />
+                    <Education />
+                </Suspense>
             </div>
-          }
-        >
-          <Experience />
-          <Skills />
-          <Projects />
-          <CodingProfile />
-          <Education />
-        </Suspense>
-      </div>
 
-      <Footer />
-    </div>
-  );
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
