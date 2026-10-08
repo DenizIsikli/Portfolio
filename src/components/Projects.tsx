@@ -101,8 +101,8 @@ const Projects: FC = () => {
                                             </motion.button>
                                         </Dialog.Trigger>
                                         <Dialog.Portal>
-                                            <Dialog.Overlay className="fixed inset-0 bg-black/60 backdrop-blur-sm" />
-                                            <Dialog.Content className="fixed left-1/2 top-1/2 w-[90vw] max-w-2xl -translate-x-1/2 -translate-y-1/2 rounded-xl border border-border/50 bg-card/95 backdrop-blur-md p-6 shadow-2xl focus:outline-none">
+                                            <Dialog.Overlay className="z-50 fixed inset-0 bg-black/60 backdrop-blur-sm" />
+                                            <Dialog.Content className="z-50 fixed left-1/2 top-1/2 w-[90vw] max-w-2xl -translate-x-1/2 -translate-y-1/2 rounded-xl border border-border/50 bg-card/95 backdrop-blur-md p-6 shadow-2xl focus:outline-none">
                                                 <Dialog.Title className="text-lg font-semibold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
                                                     {proj.title}
                                                 </Dialog.Title>
@@ -234,9 +234,9 @@ const Projects: FC = () => {
                             </motion.button>
                         </Dialog.Trigger>
                         <Dialog.Portal>
-                            <Dialog.Overlay className="fixed inset-0 bg-black/60 backdrop-blur-sm" />
+                            <Dialog.Overlay className="z-50 fixed inset-0 bg-black/60 backdrop-blur-sm" />
                             <Dialog.Content
-                                className="fixed left-1/2 top-1/2 w-[95vw] max-w-5xl -translate-x-1/2 -translate-y-1/2 rounded-xl
+                                className="z-50 fixed left-1/2 top-1/2 w-[95vw] max-w-5xl -translate-x-1/2 -translate-y-1/2 rounded-xl
 border border-border/50 bg-card/95 backdrop-blur-md p-6 shadow-2xl focus:outline-none"
                             >
                                 <Dialog.Title className="text-lg font-semibold text-center">
@@ -278,8 +278,8 @@ border border-border/50 bg-card/95 backdrop-blur-md p-6 shadow-2xl focus:outline
                                                         </Dialog.Trigger>
 
                                                         <Dialog.Portal>
-                                                            <Dialog.Overlay className="fixed inset-0 bg-black/60 backdrop-blur-sm" />
-                                                            <Dialog.Content className="fixed left-1/2 top-1/2 w-[90vw] max-w-2xl -translate-x-1/2 -translate-y-1/2 rounded-xl border border-border/50 bg-card/95 backdrop-blur-md p-6 shadow-2xl focus:outline-none">
+                                                            <Dialog.Overlay className="z-50 fixed inset-0 bg-black/60 backdrop-blur-sm" />
+                                                            <Dialog.Content className="z-50 fixed left-1/2 top-1/2 w-[90vw] max-w-2xl -translate-x-1/2 -translate-y-1/2 rounded-xl border border-border/50 bg-card/95 backdrop-blur-md p-6 shadow-2xl focus:outline-none">
                                                                 <Dialog.Title className="text-lg font-semibold bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
                                                                     {proj.title}
                                                                 </Dialog.Title>
