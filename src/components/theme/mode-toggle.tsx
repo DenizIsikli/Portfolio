@@ -36,7 +36,7 @@ export function ModeToggle({ className }: ModeToggleProps) {
             onClick={() => setTheme(isDark ? "light" : "dark")}
             className={cn(
                 "inline-flex h-9 w-9 items-center justify-center rounded-md border border-border bg-background text-foreground",
-                "hover:bg-accent hover:text-accent-foreground transition-all duration-300",
+                "hover:bg-accent hover:text-accent-foreground transition-[transform,background-color,color] duration-200 ease-out active:scale-95",
                 "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                 "relative overflow-hidden group hover:scale-105",
                 className,

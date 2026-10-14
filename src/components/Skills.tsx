@@ -13,51 +13,18 @@ type SkillCategory = {
 };
 
 const Skills: FC = () => {
-    const skillCategories: { title: string; skills: Skill[] }[] = (skills as SkillCategory[]).map((c) => ({
-        title: c.title,
-        skills: c.items,
-    }));
+    const categories = skills as SkillCategory[];
 
     return (
         <section id="skills" className="py-16 sm:py-20 lg:py-24 relative overflow-hidden">
-            {/* Animated background elements */}
-            <div className="absolute inset-0 -z-10">
-                <motion.div
-                    className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full blur-xl"
-                    animate={{
-                        x: [0, 20, 0],
-                        y: [0, -20, 0],
-                        scale: [1, 1.1, 1],
-                    }}
-                    transition={{
-                        duration: 8,
-                        repeat: Infinity,
-                        ease: "easeInOut",
-                    }}
-                />
-                <motion.div
-                    className="absolute bottom-20 right-20 w-40 h-40 bg-gradient-to-r from-pink-500/10 to-orange-500/10 rounded-full blur-xl"
-                    animate={{
-                        x: [0, -30, 0],
-                        y: [0, 30, 0],
-                        scale: [1, 0.9, 1],
-                    }}
-                    transition={{
-                        duration: 10,
-                        repeat: Infinity,
-                        ease: "easeInOut",
-                        delay: 2,
-                    }}
-                />
-            </div>
-
             <div className="container">
+                {/* Title */}
                 <motion.div
                     className="text-center mb-12"
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 12 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
+                    transition={{ duration: 0.3, ease: "easeOut" }}
                 >
                     <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
                         Technical Skills
@@ -65,86 +32,54 @@ const Skills: FC = () => {
                 </motion.div>
 
                 <div className="grid gap-6 md:grid-cols-2">
-                    {skillCategories.map((category, index) => (
+                    {categories.map((category, index) => (
                         <motion.div
-                            key={index}
-                            className="relative rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm p-6 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
-                            initial={{ opacity: 0, y: 20 }}
+                            key={category.title}
+                            className="relative rounded-xl border border-border/50 bg-card/50 p-6 shadow-lg transition-shadow duration-200 ease-out hover:shadow-xl"
+                            initial={{ opacity: 0, y: 12 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.4, delay: index * 0.1 }}
-                            whileHover={{
-                                scale: 1.02,
-                                boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
-                            }}
+                            transition={{ duration: 0.3, ease: "easeOut", delay: (index % 2) * 0.06 }}
                         >
                             <h3 className="text-lg font-semibold mb-6 relative pb-3">
-                                <span className="bg-gradient-to-r from-primary via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                                <span className="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
                                     {category.title}
                                 </span>
                                 <motion.div
-                                    className="absolute left-0 bottom-0 h-0.5 bg-gradient-to-r from-primary to-purple-500"
-                                    initial={{ width: 0 }}
-                                    whileInView={{ width: "100%" }}
+                                    className="absolute left-0 bottom-0 h-0.5 w-full origin-left bg-gradient-to-r from-foreground to-transparent"
+                                    initial={{ scaleX: 0 }}
+                                    whileInView={{ scaleX: 1 }}
                                     viewport={{ once: true }}
-                                    transition={{ duration: 0.8, delay: 0.3 }}
+                                    transition={{ duration: 0.4, ease: "easeOut", delay: 0.15 }}
                                 />
                             </h3>
 
                             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4">
-                                {category.skills.map((skill, skillIndex) => (
-                                    <motion.div
-                                        key={skillIndex}
-                                        className="group relative"
-                                        initial={{ opacity: 0, scale: 0.8 }}
-                                        whileInView={{ opacity: 1, scale: 1 }}
-                                        viewport={{ once: true }}
-                                        transition={{
-                                            duration: 0.3,
-                                            delay: index * 0.1 + skillIndex * 0.05,
-                                        }}
-                                        whileHover={{
-                                            scale: 1.1,
-                                            rotate: [0, -5, 5, 0],
-                                        }}
-                                        whileTap={{ scale: 0.95 }}
+                                {category.items.map((skill) => (
+                                    <div
+                                        key={skill.name}
+                                        className="group relative transition-transform duration-200 ease-out hover:scale-110 active:scale-95"
                                     >
                                         <div className="flex flex-col items-center text-center">
                                             <div className="relative">
-                                                {/* Glow effect on hover */}
-                                                <motion.div
-                                                    className="absolute inset-0 bg-gradient-to-r from-primary/20 to-purple-500/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                                                    animate={{
-                                                        scale: [1, 1.1, 1],
-                                                        opacity: [0, 0.3, 0],
-                                                    }}
-                                                    transition={{
-                                                        duration: 2,
-                                                        repeat: Infinity,
-                                                        ease: "easeInOut",
-                                                    }}
-                                                />
+                                                {/* Glow */}
+                                                <div className="absolute inset-0 rounded-xl bg-foreground/10 blur-lg opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
 
-                                                <div className="relative h-16 w-16 flex items-center justify-center rounded-xl bg-gradient-to-br from-card to-muted/50 border border-border/50 group-hover:border-primary/50 transition-all duration-300 group-hover:shadow-lg">
-                                                    <motion.img
+                                                <div className="relative h-16 w-16 flex items-center justify-center rounded-xl bg-gradient-to-br from-card to-muted/50 border border-border/50 transition-[border-color,box-shadow] duration-200 group-hover:border-foreground/40 group-hover:shadow-lg">
+                                                    <img
                                                         src={skill.icon}
                                                         alt={skill.name}
-                                                        className="max-h-8 max-w-8 transition-transform duration-300 group-hover:scale-110"
+                                                        className="max-h-8 max-w-8 transition-transform duration-200 ease-out group-hover:scale-110"
                                                         loading="lazy"
-                                                        whileHover={{ rotate: 360 }}
-                                                        transition={{ duration: 0.6 }}
                                                     />
                                                 </div>
                                             </div>
 
-                                            <motion.span
-                                                className="mt-2 text-xs text-muted-foreground group-hover:text-foreground transition-colors duration-300"
-                                                whileHover={{ y: -2 }}
-                                            >
+                                            <span className="mt-2 text-xs text-muted-foreground transition-colors duration-200 group-hover:text-foreground">
                                                 {skill.name}
-                                            </motion.span>
+                                            </span>
                                         </div>
-                                    </motion.div>
+                                    </div>
                                 ))}
                             </div>
                         </motion.div>
