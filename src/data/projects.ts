@@ -92,6 +92,44 @@ export const projects: Project[] = [
         tags: ["Python", "Discord Bot API", "APIs", "Flask"],
     },
     {
+        title: "TickerHop",
+        bullets: [
+            "Firefox extension that links the stock you're viewing on Nordnet to its TradingView chart.",
+            "Maps Nordnet exchange codes to TradingView symbols across 12 exchanges.",
+            "Covers Nordic, US, UK, German and Canadian markets.",
+        ],
+        links: {
+            code: "https://github.com/DenizIsikli/TickerHop",
+            demo: null,
+        },
+        tags: ["JavaScript", "Firefox Extension", "Browser Extension", "Finance"],
+    },
+    {
+        title: "CodeLedger",
+        bullets: [
+            "Firefox extension for faster archiving of solutions on Codeforces and LeetCode.",
+            "Copies formatted solution filenames and contest names with one click.",
+            "Locks Codeforces submission filters to Accepted and C++ automatically.",
+        ],
+        links: {
+            code: "https://github.com/DenizIsikli/Codeledger",
+            demo: null,
+        },
+        tags: ["JavaScript", "Firefox Extension", "Browser Extension", "Competitive Programming"],
+    },
+    {
+        title: "Lindenmayer System",
+        bullets: [
+            "Implemented a Lindenmayer System (L-System) in C++ and SDL2.",
+            "Used for procedural generation of fractal patterns and plant-like structures.",
+        ],
+        links: {
+            code: "https://github.com/DenizIsikli/LindenmayerSystem/blob/main/LindenmayerSystem.cpp",
+            demo: null,
+        },
+        tags: ["C++", "SDL2", "Lindenmayer System", "Procedural Generation"],
+    },
+    {
         title: "Advent of Code",
         bullets: [
             "Solutions to Advent of Code challenges across multiple years.",
@@ -104,19 +142,6 @@ export const projects: Project[] = [
             demo: null,
         },
         tags: ["C++", "Algorithms", "Problem Solving", "Advent of Code"],
-    },
-    {
-        title: "TickerHop",
-        bullets: [
-            "Firefox extension that links the stock you're viewing on Nordnet to its TradingView chart.",
-            "Maps Nordnet exchange codes to TradingView symbols across 12 exchanges.",
-            "Covers Nordic, US, UK, German and Canadian markets.",
-        ],
-        links: {
-            code: "https://github.com/DenizIsikli/TickerHop",
-            demo: null,
-        },
-        tags: ["JavaScript", "Firefox Extension", "Browser Extension", "Finance"],
     },
     {
         title: "Automatic CAD QA",
@@ -266,18 +291,6 @@ export const projects: Project[] = [
             demo: null,
         },
         tags: ["TypeScript", "GitHub Actions", "SVG", "Automation"],
-    },
-    {
-        title: "Lindenmayer System",
-        bullets: [
-            "Implemented a Lindenmayer System (L-System) in C++ and SDL2.",
-            "Used for procedural generation of fractal patterns and plant-like structures.",
-        ],
-        links: {
-            code: "https://github.com/DenizIsikli/LindenmayerSystem/blob/main/LindenmayerSystem.cpp",
-            demo: null,
-        },
-        tags: ["C++", "SDL2", "Lindenmayer System", "Procedural Generation"],
     },
     {
         title: "Brians Brain",
