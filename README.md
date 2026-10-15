@@ -1,5 +1,15 @@
 # Portfolio
 
-A personal portfolio showcasing projects, technical skills, and professional experience. The application is built using Vite, React, and TypeScript, with a focus on performance, maintainability, and modern development practices.
+My personal portfolio site, with my projects, skills, experience, education and live competitive programming stats.
 
-https://denizisikli.netlify.app/
+**Live site:** https://denizisikli.netlify.app/
+
+## Tech Stack
+
+| Area      | Tools                                                        |
+| --------- | ------------------------------------------------------------ |
+| Framework | React 19, TypeScript, Vite                                   |
+| Styling   | Tailwind CSS, Framer Motion                                  |
+| UI        | Radix UI Dialog, Lucide and React Icons, React Typed         |
+| Data      | Axios, Codeforces API, LeetCode GraphQL via Netlify Function |
+| Hosting   | Netlify                                                      |
